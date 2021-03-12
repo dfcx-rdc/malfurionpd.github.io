@@ -17,7 +17,7 @@ weight: 10
 
 
 
-# Github Pages
+## Github Pages
 
 
 
@@ -31,7 +31,7 @@ weight: 10
 
 
 
-# Hugo 安装
+## Hugo 安装
 
 
 
@@ -49,7 +49,7 @@ Hugo Static Site Generator v0.80.0/extended darwin/amd64 BuildDate: unknown
 
 
 
-# Site 初始化
+## Site 初始化
 
 
 
@@ -71,7 +71,7 @@ git init
 
 
 
-# 主题安装
+## 主题安装
 
 [hugo-book](https://github.com/alex-shpak/hugo-book)
 
@@ -86,7 +86,7 @@ hugo server --minify --theme book
 
 
 
-# 配置
+## 配置
 
 docs
 
@@ -106,7 +106,7 @@ docs
 
 
 
-# 发布
+## 发布
 
 
 

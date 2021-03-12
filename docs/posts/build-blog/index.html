@@ -419,7 +419,16 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#github-pages">Github Pages</a></li>
+    <li><a href="#hugo-安装">Hugo 安装</a></li>
+    <li><a href="#site-初始化">Site 初始化</a></li>
+    <li><a href="#主题安装">主题安装</a></li>
+    <li><a href="#配置">配置</a></li>
+    <li><a href="#发布">发布</a></li>
+  </ul>
+</nav>
 
 
 
@@ -444,16 +453,16 @@ https://github.com/alex-shpak/hugo-book
   
 
 
-  <p><h1 id="github-pages">
+  <p><h2 id="github-pages">
   Github Pages
   <a class="anchor" href="#github-pages">#</a>
-</h1>
+</h2>
 <p>按照 <a href="https://pages.github.com/">Github Pages官网</a> 说明，新建一个和github用户名一样的Repo，格式为 <code>username.github.io</code>。</p>
 <p><img src="https://notebook.qiniu.adenghub.club/image-20210312135040716.png" alt="image-20210312135040716" /></p>
-<h1 id="hugo-安装">
+<h2 id="hugo-安装">
   Hugo 安装
   <a class="anchor" href="#hugo-%e5%ae%89%e8%a3%85">#</a>
-</h1>
+</h2>
 <p>参考 <a href="https://gohugo.io/getting-started/installing/">Hugo官网</a> 本地安装hugo，笔者Mac使用brew安装:</p>
 <pre><code>$ brew install hugo
 ···
@@ -462,10 +471,10 @@ $ hugo version
 Hugo Static Site Generator v0.80.0/extended darwin/amd64 BuildDate: unknown
 
 
-</code></pre><h1 id="site-初始化">
+</code></pre><h2 id="site-初始化">
   Site 初始化
   <a class="anchor" href="#site-%e5%88%9d%e5%a7%8b%e5%8c%96">#</a>
-</h1>
+</h2>
 <pre><code>$ hugo new site malfurionpd.github.io
 cd malfurionpd.github.io
 
@@ -475,26 +484,26 @@ git init
 
 
 
-</code></pre><h1 id="主题安装">
+</code></pre><h2 id="主题安装">
   主题安装
   <a class="anchor" href="#%e4%b8%bb%e9%a2%98%e5%ae%89%e8%a3%85">#</a>
-</h1>
+</h2>
 <p><a href="https://github.com/alex-shpak/hugo-book">hugo-book</a></p>
 <pre><code>git submodule add https://github.com/alex-shpak/hugo-book themes/book
 cp -R themes/book/exampleSite/content .
 
 hugo server --minify --theme book
-</code></pre><h1 id="配置">
+</code></pre><h2 id="配置">
   配置
   <a class="anchor" href="#%e9%85%8d%e7%bd%ae">#</a>
-</h1>
+</h2>
 <p>docs</p>
 <p>域名</p>
 <p><img src="https://notebook.qiniu.adenghub.club/image-20210312141034064.png" alt="image-20210312141034064" /></p>
-<h1 id="发布">
+<h2 id="发布">
   发布
   <a class="anchor" href="#%e5%8f%91%e5%b8%83">#</a>
-</h1>
+</h2>
 <pre><code>hugo new site malfurionpd.github.io
 cd malfurionpd.github.io
 
@@ -547,7 +556,16 @@ git push -u origin main
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#github-pages">Github Pages</a></li>
+    <li><a href="#hugo-安装">Hugo 安装</a></li>
+    <li><a href="#site-初始化">Site 初始化</a></li>
+    <li><a href="#主题安装">主题安装</a></li>
+    <li><a href="#配置">配置</a></li>
+    <li><a href="#发布">发布</a></li>
+  </ul>
+</nav>
 
 
  
