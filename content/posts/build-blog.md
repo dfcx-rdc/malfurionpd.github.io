@@ -1,19 +1,25 @@
----
-title: "Build Blog"
-date: 2021-03-12T14:32:27+08:00
-author: "adeng"
-linktitle: Creating a New Theme
-title: 博客搭建
-weight: 10
----
++++
+
+title = "使用Hugo和Github Pages搭建博客"
+description = ""
+author = "adeng"
+tags = [
+    "github",
+    "golang",
+    "hugo",
+    "devops",
+]
+date = "2021-03-12"
+categories = [
+    "DevOps",
+]
+menu = "main"
+
++++
 
 
 
-
-
-
-
-
+本文
 
 
 
@@ -132,3 +138,8 @@ git push -u origin main
 
 ```
 
+
+
+## Refs
+
+[GitHub Pages 搭建教程](https://sspai.com/post/54608)
