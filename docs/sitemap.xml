@@ -3,88 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.adenghub.club/posts/build-blog/</loc>
-    <lastmod>2021-03-12T14:32:27+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.adenghub.club/posts/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.adenghub.club/posts/migrate-from-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.adenghub.club/posts/</loc>
-    <lastmod>2021-03-12T14:32:27+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.adenghub.club/</loc>
-    <lastmod>2021-03-12T14:32:27+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.adenghub.club/posts/goisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.adenghub.club/categories/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.adenghub.club/categories/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://blog.adenghub.club/categories/devops/</loc>
+    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.adenghub.club/tags/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://blog.adenghub.club/tags/devops/</loc>
+    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.adenghub.club/posts/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.adenghub.club/tags/go/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://blog.adenghub.club/tags/github/</loc>
+    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.adenghub.club/tags/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.adenghub.club/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.adenghub.club/tags/hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.adenghub.club/</loc>
+    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.adenghub.club/tags/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.adenghub.club/tags/templates/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.adenghub.club/tags/themes/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://blog.adenghub.club/posts/build-blog/</loc>
+    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

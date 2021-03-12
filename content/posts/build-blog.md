@@ -1,7 +1,7 @@
 +++
 
 title = "使用Hugo和Github Pages搭建博客"
-description = ""
+description = "本文介绍了使用Hugo和Github Pages搭建博客的方法"
 author = "adeng"
 tags = [
     "github",
