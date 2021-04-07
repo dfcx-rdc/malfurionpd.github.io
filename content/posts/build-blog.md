@@ -1,4 +1,8 @@
+
+
 +++
+
+
 
 title = "使用Hugo和Github Pages搭建博客"
 description = "本文介绍了使用Hugo和Github Pages搭建博客的方法"
@@ -15,7 +19,15 @@ categories = [
 ]
 menu = "main"
 
+
+
 +++
+
+
+
+
+
+
 
 
 
@@ -137,6 +149,33 @@ git push -u origin main
 
 
 ```
+
+
+
+## 写作
+
+
+
+```
+hugo new posts/xxx.md
+
+hugo server 
+
+hugo
+```
+
+
+
+## 更换主题
+
+
+
+```
+git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+git submodule add git@github.com:CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+```
+
+
 
 
 

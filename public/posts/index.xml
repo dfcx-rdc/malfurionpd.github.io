@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Example Site</title>
+    <link>https://example.com/posts/</link>
+    <description>Recent content in Blog on Example Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown 语法</title>
+      <link>https://example.com/posts/markdown-syntax/</link>
+      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/markdown-syntax/</guid>
+      <description>flow st=&amp;gt;start: Start op=&amp;gt;operation: Your Operation cond=&amp;gt;condition: Yes or No? e=&amp;gt;end st-&amp;gt;op-&amp;gt;cond cond(yes)-&amp;gt;e cond(no)-&amp;gt;o sequenceDiagram 客户-&amp;gt;&amp;gt;银行柜台: 我要存钱 银行柜台-&amp;gt;&amp;gt;后台: 改一下这个账户数字哦 后台-&amp;gt;&amp;gt;银行柜台: 账户的数字改完了，明天起息 银行柜台-&amp;gt;&amp;gt;客户: 好了，给你回单 ，下一位 </description>
+    </item>
+    
+    <item>
+      <title>使用Hugo和Github Pages搭建博客</title>
+      <link>https://example.com/posts/build-blog/</link>
+      <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/build-blog/</guid>
+      <description>本文
+Github Pages 按照 Github Pages官网 说明，新建一个和github用户名一样的Repo，格式为 username.github.io。
+Hugo 安装 参考 Hugo官网 本地安装hugo，笔者Mac使用brew安装:
+$ brew install hugo ··· $ hugo version Hugo Static Site Generator v0.80.0/extended darwin/amd64 BuildDate: unknown Site 初始化 $ hugo new site malfurionpd.github.io cd malfurionpd.github.io git init 主题安装 hugo-book
+git submodule add https://github.com/alex-shpak/hugo-book themes/book cp -R themes/book/exampleSite/content . hugo server --minify --theme book 配置 docs
+域名
+发布 hugo new site malfurionpd.github.io cd malfurionpd.github.io echo &amp;quot;# malfurionpd.github.io&amp;quot; &amp;gt;&amp;gt; README.</description>
+    </item>
+    
+  </channel>
+</rss>
