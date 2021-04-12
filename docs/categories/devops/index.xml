@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DevOps on Adeng&#39;s Blog</title>
-    <link>https://blog.adenghub.club/categories/devops/</link>
-    <description>Recent content in DevOps on Adeng&#39;s Blog</description>
+    <title>DevOps on adeng&#39;s blog</title>
+    <link>http://blog.adenghub.club/categories/devops/</link>
+    <description>Recent content in DevOps on adeng&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 12 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.adenghub.club/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/categories/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用Hugo和Github Pages搭建博客</title>
-      <link>https://blog.adenghub.club/posts/build-blog/</link>
+      <link>http://blog.adenghub.club/posts/build-blog/</link>
       <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.adenghub.club/posts/build-blog/</guid>
+      <guid>http://blog.adenghub.club/posts/build-blog/</guid>
       <description>本文
-Github Pages #  按照 Github Pages官网 说明，新建一个和github用户名一样的Repo，格式为 username.github.io。
-Hugo 安装 #  参考 Hugo官网 本地安装hugo，笔者Mac使用brew安装:
-$ brew install hugo ··· $ hugo version Hugo Static Site Generator v0.80.0/extended darwin/amd64 BuildDate: unknown Site 初始化 #  $ hugo new site malfurionpd.github.io cd malfurionpd.github.io git init 主题安装 #  hugo-book
-git submodule add https://github.com/alex-shpak/hugo-book themes/book cp -R themes/book/exampleSite/content . hugo server --minify --theme book 配置 #  docs
+Github Pages 按照 Github Pages官网 说明，新建一个和github用户名一样的Repo，格式为 username.github.io。
+Hugo 安装 参考 Hugo官网 本地安装hugo，笔者Mac使用brew安装:
+$ brew install hugo ··· $ hugo version Hugo Static Site Generator v0.80.0/extended darwin/amd64 BuildDate: unknown Site 初始化 $ hugo new site malfurionpd.github.io cd malfurionpd.github.io git init 主题安装 hugo-book
+git submodule add https://github.com/alex-shpak/hugo-book themes/book cp -R themes/book/exampleSite/content . hugo server --minify --theme book 配置 docs
 域名
-发布 #  hugo new site malfurionpd.</description>
+发布 hugo new site malfurionpd.github.io cd malfurionpd.github.io echo &amp;quot;# malfurionpd.github.io&amp;quot; &amp;gt;&amp;gt; README.</description>
     </item>
     
   </channel>

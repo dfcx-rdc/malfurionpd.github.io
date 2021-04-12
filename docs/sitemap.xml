@@ -3,57 +3,67 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.adenghub.club/posts/</loc>
-    <lastmod>2021-03-25T10:45:21+08:00</lastmod>
+    <loc>http://blog.adenghub.club/posts/</loc>
+    <lastmod>2021-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.adenghub.club/</loc>
-    <lastmod>2021-03-25T10:45:21+08:00</lastmod>
+    <loc>http://blog.adenghub.club/categories/</loc>
+    <lastmod>2021-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.adenghub.club/posts/markdown-syntax/</loc>
-    <lastmod>2021-03-25T10:45:21+08:00</lastmod>
+    <loc>http://blog.adenghub.club/</loc>
+    <lastmod>2021-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.adenghub.club/categories/</loc>
+    <loc>http://blog.adenghub.club/tags/markdown/</loc>
+    <lastmod>2021-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.adenghub.club/posts/markdown-syntax/</loc>
+    <lastmod>2021-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.adenghub.club/tags/</loc>
+    <lastmod>2021-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.adenghub.club/categories/write/</loc>
+    <lastmod>2021-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.adenghub.club/categories/devops/</loc>
     <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.adenghub.club/categories/devops/</loc>
+    <loc>http://blog.adenghub.club/tags/devops/</loc>
     <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.adenghub.club/tags/devops/</loc>
+    <loc>http://blog.adenghub.club/tags/github/</loc>
     <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.adenghub.club/tags/github/</loc>
+    <loc>http://blog.adenghub.club/tags/golang/</loc>
     <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.adenghub.club/tags/golang/</loc>
+    <loc>http://blog.adenghub.club/tags/hugo/</loc>
     <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.adenghub.club/tags/hugo/</loc>
-    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.adenghub.club/tags/</loc>
-    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.adenghub.club/posts/build-blog/</loc>
+    <loc>http://blog.adenghub.club/posts/build-blog/</loc>
     <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url>
   
