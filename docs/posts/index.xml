@@ -6,7 +6,20 @@
     <description>Recent content in Blog on adeng&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo中使用Mermaid画图</title>
+      <link>http://blog.adenghub.club/posts/write/hugo-mermaid/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/posts/write/hugo-mermaid/</guid>
+      <description>使用Mermaid给Markdown增加更多的表现力。
+在theme/hugo-theme-stack/layouts/partials/footer/customer.html中加入如下内容：
+{{ if .Params.mermaid }} &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/mermaid@8.8.2/dist/mermaid.min.js&amp;#34; integrity=&amp;#34;sha256-KqisLh8jVMBRjpNkOhH5W9VWs+F6x6vQksLqxs7+x9A=&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34; &amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; // Replace mermaid pre.code to div  Array.from(document.getElementsByClassName(&amp;#34;language-mermaid&amp;#34;)).forEach( (el) =&amp;gt; { el.parentElement.outerHTML = `&amp;lt;div class=&amp;#34;mermaid&amp;#34;&amp;gt;${el.innerText}&amp;lt;/div&amp;gt;`; } ); &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; /* Set svg to center */ .mermaid svg { display: block; margin: auto; } &amp;lt;/style&amp;gt; {{ end }} Hugo模板中添加了if .Params.mermaid的检查，避免所有页面都需要加载它。
+在需要使用的Hugo页面，可以在Front Matter中添加一个配置 mermaid = true，显式指定使用Mermaid。
+参考 使用Mermaid在hugo的Markdown中绘制UML</description>
+    </item>
+    
     <item>
       <title>Markdown 语法</title>
       <link>http://blog.adenghub.club/posts/markdown-syntax/</link>
