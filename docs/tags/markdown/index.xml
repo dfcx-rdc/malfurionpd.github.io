@@ -21,6 +21,16 @@
     </item>
     
     <item>
+      <title>Mermaid 语法</title>
+      <link>http://blog.adenghub.club/posts/write/mermaid-syntax/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/posts/write/mermaid-syntax/</guid>
+      <description>官方文档
+简介 语法 时序图 sequenceDiagram participant John participant Alice Alice-&amp;gt;&amp;gt;John: Hello John, how are you? John--&amp;gt;&amp;gt;Alice: Great! </description>
+    </item>
+    
+    <item>
       <title>Markdown 语法</title>
       <link>http://blog.adenghub.club/posts/markdown-syntax/</link>
       <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>

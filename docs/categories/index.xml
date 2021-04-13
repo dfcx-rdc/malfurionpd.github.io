@@ -8,6 +8,33 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Java</title>
+      <link>http://blog.adenghub.club/categories/java/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/categories/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mermaid</title>
+      <link>http://blog.adenghub.club/categories/mermaid/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/categories/mermaid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Standard</title>
+      <link>http://blog.adenghub.club/categories/standard/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/categories/standard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Write</title>
       <link>http://blog.adenghub.club/categories/write/</link>
       <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>

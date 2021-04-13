@@ -1,8 +1,22 @@
----
-title: "Bladex Temp"
-date: 2021-04-12T11:04:19+08:00
-draft: true
----
+
+
++++
+
+title = "BladeX 知识点"
+description = "BladeX 知识点"
+author = "adeng"
+tags = [
+    "bladex"
+]
+date = "2021-04-12"
+categories = [
+    "Java",
+]
+menu = "main"
+
+mermaid = true
+
++++
 
 
 
@@ -77,6 +91,10 @@ blade-flow-dev.yaml ??
 http://localhost:8858
 
 sentinel / sentinel
+
+
+
+
 
 
 

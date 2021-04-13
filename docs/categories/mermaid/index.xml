@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mermaid on adeng&#39;s blog</title>
+    <link>http://blog.adenghub.club/categories/mermaid/</link>
+    <description>Recent content in Mermaid on adeng&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/categories/mermaid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mermaid 语法</title>
+      <link>http://blog.adenghub.club/posts/write/mermaid-syntax/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/posts/write/mermaid-syntax/</guid>
+      <description>官方文档
+简介 语法 时序图 sequenceDiagram participant John participant Alice Alice-&amp;gt;&amp;gt;John: Hello John, how are you? John--&amp;gt;&amp;gt;Alice: Great! </description>
+    </item>
+    
+  </channel>
+</rss>

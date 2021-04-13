@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.adenghub.club/tags/bladex/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.adenghub.club/posts/java/bladex-temp/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.adenghub.club/posts/</loc>
     <lastmod>2021-04-12T00:00:00+00:00</lastmod>
   </url>
@@ -23,7 +33,37 @@
   </url>
   
   <url>
+    <loc>http://blog.adenghub.club/categories/java/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.adenghub.club/tags/markdown/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.adenghub.club/categories/mermaid/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.adenghub.club/posts/write/mermaid-syntax/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.adenghub.club/posts/standard/oauth2/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.adenghub.club/tags/oauth2/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.adenghub.club/categories/standard/</loc>
     <lastmod>2021-04-12T00:00:00+00:00</lastmod>
   </url>
   

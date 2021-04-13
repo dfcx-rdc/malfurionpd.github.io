@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Standard on adeng&#39;s blog</title>
+    <link>http://blog.adenghub.club/categories/standard/</link>
+    <description>Recent content in Standard on adeng&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/categories/standard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OAuth2</title>
+      <link>http://blog.adenghub.club/posts/standard/oauth2/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/posts/standard/oauth2/</guid>
+      <description>OAuth2简介 sequenceDiagram 客户-&amp;gt;&amp;gt;银行柜台: 我要存钱 银行柜台-&amp;gt;&amp;gt;后台: 改一下这个账户数字哦 后台-&amp;gt;&amp;gt;银行柜台: 账户的数字改完了，明天起息 银行柜台-&amp;gt;&amp;gt;客户: 好了，给你回单 ，下一位 </description>
+    </item>
+    
+  </channel>
+</rss>
