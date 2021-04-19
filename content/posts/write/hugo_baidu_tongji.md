@@ -46,3 +46,22 @@ mermaid = true
 
 
 
+/layouts/partials/head/script.html
+
+
+
+```
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?51a26ee9b826c848e0f3eb1665792cce";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+```
+

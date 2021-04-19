@@ -14,7 +14,9 @@
       
       <guid>http://blog.adenghub.club/posts/write/hugo_baidu_tongji/</guid>
       <description>注册一个百度账号，登录 百度统计官网
-可选的还有 Goolge 和 不蒜子</description>
+可选的还有 Goolge 和 不蒜子
+/layouts/partials/head/script.html
+&amp;lt;script&amp;gt; var _hmt = _hmt || []; (function() { var hm = document.createElement(&amp;quot;script&amp;quot;); hm.src = &amp;quot;https://hm.baidu.com/hm.js?51a26ee9b826c848e0f3eb1665792cce&amp;quot;; var s = document.getElementsByTagName(&amp;quot;script&amp;quot;)[0]; s.parentNode.insertBefore(hm, s); })(); &amp;lt;/script&amp;gt; </description>
     </item>
     
     <item>
