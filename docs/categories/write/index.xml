@@ -6,37 +6,18 @@
     <description>Recent content in Write on adeng&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/categories/write/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/categories/write/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo中使用Mermaid画图</title>
-      <link>http://blog.adenghub.club/posts/write/hugo-mermaid/</link>
-      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      <title>使用Hugo和Github Pages搭建博客</title>
+      <link>http://blog.adenghub.club/p/%E4%BD%BF%E7%94%A8hugo%E5%92%8Cgithub-pages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.adenghub.club/posts/write/hugo-mermaid/</guid>
-      <description>使用Mermaid给Markdown增加更多的表现力。
-在theme/hugo-theme-stack/layouts/partials/footer/customer.html中加入如下内容：
-{{ if .Params.mermaid }} &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/mermaid@8.8.2/dist/mermaid.min.js&amp;#34; integrity=&amp;#34;sha256-KqisLh8jVMBRjpNkOhH5W9VWs+F6x6vQksLqxs7+x9A=&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34; &amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; // Replace mermaid pre.code to div  Array.from(document.getElementsByClassName(&amp;#34;language-mermaid&amp;#34;)).forEach( (el) =&amp;gt; { el.parentElement.outerHTML = `&amp;lt;div class=&amp;#34;mermaid&amp;#34;&amp;gt;${el.innerText}&amp;lt;/div&amp;gt;`; } ); &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; /* Set svg to center */ .mermaid svg { display: block; margin: auto; } &amp;lt;/style&amp;gt; {{ end }} Hugo模板中添加了if .Params.mermaid的检查，避免所有页面都需要加载它。
-在需要使用的Hugo页面，可以在Front Matter中添加一个配置 mermaid = true，显式指定使用Mermaid。
-参考 使用Mermaid在hugo的Markdown中绘制UML</description>
-    </item>
-    
-    <item>
-      <title>Mermaid 语法</title>
-      <link>http://blog.adenghub.club/posts/write/mermaid-syntax/</link>
-      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.adenghub.club/posts/write/mermaid-syntax/</guid>
-      <description>官方文档
-简介 语法 时序图 sequenceDiagram participant John participant Alice Alice-&amp;gt;&amp;gt;John: Hello John, how are you? John--&amp;gt;&amp;gt;Alice: Great! </description>
-    </item>
-    
-    <item>
-      <title>Markdown 语法</title>
-      <link>http://blog.adenghub.club/posts/markdown-syntax/</link>
-      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.adenghub.club/posts/markdown-syntax/</guid>
-      <description>flow st=&amp;gt;start: Start op=&amp;gt;operation: Your Operation cond=&amp;gt;condition: Yes or No? e=&amp;gt;end st-&amp;gt;op-&amp;gt;cond cond(yes)-&amp;gt;e cond(no)-&amp;gt;o sequenceDiagram 客户-&amp;gt;&amp;gt;银行柜台: 我要存钱 银行柜台-&amp;gt;&amp;gt;后台: 改一下这个账户数字哦 后台-&amp;gt;&amp;gt;银行柜台: 账户的数字改完了，明天起息 银行柜台-&amp;gt;&amp;gt;客户: 好了，给你回单 ，下一位 </description>
+      <guid>http://blog.adenghub.club/p/%E4%BD%BF%E7%94%A8hugo%E5%92%8Cgithub-pages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>本文即是本站的搭建方式。
+目前Github Pages还挺稳定，托管起来也比较省心。
+Github Pages 仓库新建 按照 Github Pages官网 说明，新建一个和github用户名一样的Repo，格式为 username.github.io。
+Hugo 安装 参考 Hugo官网 本地安装hugo，笔者Mac使用brew安装:
+$ brew install hugo ··· $ hugo version Hugo Static Site Generator v0.80.0/extended darwin/amd64 BuildDate: unknown Site 初始化 ## 新建hugo站点 $ hugo new site malfurionpd.github.io $ cd malfurionpd.github.io ## 初始化git库 $ echo &amp;quot;# malfurionpd.github.io&amp;quot; &amp;gt;&amp;gt; README.md $ git init $ git add README.md $ git commit -m &amp;quot;first commit&amp;quot; $ git branch -M main $ git remote add origin git@github.</description>
     </item>
     
   </channel>

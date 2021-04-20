@@ -9,17 +9,15 @@
     <lastBuildDate>Fri, 12 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用Hugo和Github Pages搭建博客</title>
-      <link>http://blog.adenghub.club/posts/build-blog/</link>
+      <link>http://blog.adenghub.club/p/%E4%BD%BF%E7%94%A8hugo%E5%92%8Cgithub-pages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.adenghub.club/posts/build-blog/</guid>
-      <description>本文
-Github Pages 按照 Github Pages官网 说明，新建一个和github用户名一样的Repo，格式为 username.github.io。
+      <guid>http://blog.adenghub.club/p/%E4%BD%BF%E7%94%A8hugo%E5%92%8Cgithub-pages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>本文即是本站的搭建方式。
+目前Github Pages还挺稳定，托管起来也比较省心。
+Github Pages 仓库新建 按照 Github Pages官网 说明，新建一个和github用户名一样的Repo，格式为 username.github.io。
 Hugo 安装 参考 Hugo官网 本地安装hugo，笔者Mac使用brew安装:
-$ brew install hugo ··· $ hugo version Hugo Static Site Generator v0.80.0/extended darwin/amd64 BuildDate: unknown Site 初始化 $ hugo new site malfurionpd.github.io cd malfurionpd.github.io git init 主题安装 hugo-book
-git submodule add https://github.com/alex-shpak/hugo-book themes/book cp -R themes/book/exampleSite/content . hugo server --minify --theme book 配置 docs
-域名
-发布 hugo new site malfurionpd.github.io cd malfurionpd.github.io echo &amp;quot;# malfurionpd.github.io&amp;quot; &amp;gt;&amp;gt; README.</description>
+$ brew install hugo ··· $ hugo version Hugo Static Site Generator v0.80.0/extended darwin/amd64 BuildDate: unknown Site 初始化 ## 新建hugo站点 $ hugo new site malfurionpd.github.io $ cd malfurionpd.github.io ## 初始化git库 $ echo &amp;quot;# malfurionpd.github.io&amp;quot; &amp;gt;&amp;gt; README.md $ git init $ git add README.md $ git commit -m &amp;quot;first commit&amp;quot; $ git branch -M main $ git remote add origin git@github.</description>
     </item>
     
   </channel>
