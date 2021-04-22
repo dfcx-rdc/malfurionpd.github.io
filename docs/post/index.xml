@@ -6,7 +6,28 @@
     <description>Recent content in Posts on adeng&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mermaid简介</title>
+      <link>http://blog.adenghub.club/p/mermaid%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/p/mermaid%E7%AE%80%E4%BB%8B/</guid>
+      <description>1 简介 Mermaid 可以让你使用文本和代码来创建图表和可视化呈现
+ 如果你熟悉Markdown那么你学习 Mermaid&amp;rsquo;s Syntax 完全没问题。
+ Mermaid增强了Markdown图表的表现力，对习惯Markdown格式写文档的同学来说多么令人激动啊。
+它是一个JS库，可以配合Hugo使用，使用方式请参考 这篇小文 。
+下面对语法做简单点介绍，详细文档请参考 Mermaid官网 。
+2 图表语法 2.1 流程图 Flowchart //todo
+2.2 时序图 Sequence Diagram //todo
+2.3 类图 Class Diagram //todo
+2.4 状态图 State Diagram //todo
+2.5 实体关系图 Entity Relationship Diagram 实体关系模型（或ER模型）描述了特定知识领域中相互关联的相关事物
+2.6 日程表 User Journey //todo
+2.7 甘特图 Gannt //todo
+2.8 饼图 Pie Chart //todo</description>
+    </item>
+    
     <item>
       <title>使用Hugo和Github Pages搭建博客</title>
       <link>http://blog.adenghub.club/p/%E4%BD%BF%E7%94%A8hugo%E5%92%8Cgithub-pages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>

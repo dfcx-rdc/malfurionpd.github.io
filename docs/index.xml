@@ -6,7 +6,42 @@
         <description>Recent content on adeng&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 12 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 21 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Mermaid简介</title>
+        <link>http://blog.adenghub.club/p/mermaid%E7%AE%80%E4%BB%8B/</link>
+        <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+        
+        <guid>http://blog.adenghub.club/p/mermaid%E7%AE%80%E4%BB%8B/</guid>
+        <description>&lt;img src="http://blog.adenghub.club/p/mermaid%E7%AE%80%E4%BB%8B/WX20210421-201335@2x.png" alt="Featured image of post Mermaid简介" /&gt;&lt;h1 id=&#34;1-简介&#34;&gt;1 简介&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Mermaid 可以让你使用文本和代码来创建图表和可视化呈现&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果你熟悉Markdown那么你学习 &lt;a class=&#34;link&#34; href=&#34;https://github.com/mermaid-js/mermaid/blob/develop/docs/n00b-syntaxReference.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Mermaid&amp;rsquo;s Syntax&lt;/a&gt; 完全没问题。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Mermaid增强了Markdown图表的表现力，对习惯Markdown格式写文档的同学来说多么令人激动啊。&lt;/p&gt;
+&lt;p&gt;它是一个JS库，可以配合Hugo使用，使用方式请参考 &lt;a class=&#34;link&#34; href=&#34;&#34; &gt;这篇小文&lt;/a&gt; 。&lt;/p&gt;
+&lt;p&gt;下面对语法做简单点介绍，详细文档请参考 &lt;a class=&#34;link&#34; href=&#34;https://mermaid-js.github.io/mermaid/#/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Mermaid官网&lt;/a&gt; 。&lt;/p&gt;
+&lt;h1 id=&#34;2-图表语法&#34;&gt;2 图表语法&lt;/h1&gt;
+&lt;h2 id=&#34;21-流程图-flowchart&#34;&gt;2.1 流程图 Flowchart&lt;/h2&gt;
+&lt;p&gt;//todo&lt;/p&gt;
+&lt;h2 id=&#34;22-时序图-sequence-diagram&#34;&gt;2.2 时序图 Sequence Diagram&lt;/h2&gt;
+&lt;p&gt;//todo&lt;/p&gt;
+&lt;h2 id=&#34;23-类图-class-diagram&#34;&gt;2.3 类图 Class Diagram&lt;/h2&gt;
+&lt;p&gt;//todo&lt;/p&gt;
+&lt;h2 id=&#34;24-状态图-state-diagram&#34;&gt;2.4 状态图 State Diagram&lt;/h2&gt;
+&lt;p&gt;//todo&lt;/p&gt;
+&lt;h2 id=&#34;25-实体关系图-entity-relationship-diagram&#34;&gt;2.5 实体关系图 Entity Relationship Diagram&lt;/h2&gt;
+&lt;p&gt;实体关系模型（或ER模型）描述了特定知识领域中相互关联的相关事物&lt;/p&gt;
+&lt;h2 id=&#34;26-日程表-user-journey&#34;&gt;2.6 日程表 User Journey&lt;/h2&gt;
+&lt;p&gt;//todo&lt;/p&gt;
+&lt;h2 id=&#34;27-甘特图-gannt&#34;&gt;2.7 甘特图 Gannt&lt;/h2&gt;
+&lt;p&gt;//todo&lt;/p&gt;
+&lt;h2 id=&#34;28-饼图-pie-chart&#34;&gt;2.8 饼图 Pie Chart&lt;/h2&gt;
+&lt;p&gt;//todo&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>使用Hugo和Github Pages搭建博客</title>
         <link>http://blog.adenghub.club/p/%E4%BD%BF%E7%94%A8hugo%E5%92%8Cgithub-pages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
