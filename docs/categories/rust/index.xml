@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rust on adeng&#39;s blog</title>
+    <link>http://blog.adenghub.club/categories/rust/</link>
+    <description>Recent content in Rust on adeng&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/categories/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust开发环境搭建</title>
+      <link>http://blog.adenghub.club/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <description>初步认识 拜读了大佬关于Rust的这篇博客 RUST语言的编程范式，对这门语言有了大致的认识。没有GC，强大的编译检查，基本上来说，一旦编译通过，代码运行起来是安全的，bug也是很少的。
+ 如果你对Rust的概念认识的不完整，你完全写不出程序，那怕就是很简单的一段代码。
+ 感觉还是很有必要得着，搭个环境感受下。
+直接参考 官网入门 。
+安装 笔者在mac上执行安装命令：
+$ curl --proto &#39;=https&#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh info: downloading installer Welcome to Rust! This will download and install the official compiler for the Rust programming language, and its package manager, Cargo. Rustup metadata and toolchains will be installed into the Rustup home directory, located at: /Users/adeng/.rustup This can be modified with the RUSTUP_HOME environment variable. The Cargo home directory located at: /Users/adeng/.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -4,12 +4,42 @@
   
   <url>
     <loc>http://blog.adenghub.club/</loc>
-    <lastmod>2021-04-21T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://blog.adenghub.club/categories/</loc>
-    <lastmod>2021-04-21T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.adenghub.club/post/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.adenghub.club/categories/rust/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.adenghub.club/tags/rust/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.adenghub.club/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.adenghub.club/tags/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.adenghub.club/tags/vscode/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -29,16 +59,6 @@
   
   <url>
     <loc>http://blog.adenghub.club/p/mermaid%E7%AE%80%E4%BB%8B/</loc>
-    <lastmod>2021-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.adenghub.club/post/</loc>
-    <lastmod>2021-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.adenghub.club/tags/</loc>
     <lastmod>2021-04-21T00:00:00+00:00</lastmod>
   </url>
   

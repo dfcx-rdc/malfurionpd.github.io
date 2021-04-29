@@ -6,7 +6,181 @@
         <description>Recent content on adeng&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 21 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Rust开发环境搭建</title>
+        <link>http://blog.adenghub.club/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+        <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+        
+        <guid>http://blog.adenghub.club/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+        <description>&lt;img src="http://blog.adenghub.club/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/QQ20210429-094005@2x.png" alt="Featured image of post Rust开发环境搭建" /&gt;&lt;h1 id=&#34;初步认识&#34;&gt;初步认识&lt;/h1&gt;
+&lt;p&gt;拜读了大佬关于Rust的这篇博客 &lt;a class=&#34;link&#34; href=&#34;https://coolshell.cn/articles/20845.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;RUST语言的编程范式&lt;/a&gt;，对这门语言有了大致的认识。没有GC，强大的编译检查，基本上来说，一旦编译通过，代码运行起来是安全的，bug也是很少的。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;如果你对Rust的概念认识的不完整，你完全写不出程序，那怕就是很简单的一段代码&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;感觉还是很有必要得着，搭个环境感受下。&lt;/p&gt;
+&lt;p&gt;直接参考 &lt;a class=&#34;link&#34; href=&#34;https://www.rust-lang.org/zh-CN/learn/get-started&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网入门&lt;/a&gt; 。&lt;/p&gt;
+&lt;h1 id=&#34;安装&#34;&gt;安装&lt;/h1&gt;
+&lt;p&gt;笔者在mac上执行安装命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ curl --proto &#39;=https&#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+info: downloading installer
+
+Welcome to Rust!
+
+This will download and install the official compiler for the Rust
+programming language, and its package manager, Cargo.
+
+Rustup metadata and toolchains will be installed into the Rustup
+home directory, located at:
+
+  /Users/adeng/.rustup
+
+This can be modified with the RUSTUP_HOME environment variable.
+
+The Cargo home directory located at:
+
+  /Users/adeng/.cargo
+
+This can be modified with the CARGO_HOME environment variable.
+
+The cargo, rustc, rustup and other commands will be added to
+Cargo&#39;s bin directory, located at:
+
+  /Users/adeng/.cargo/bin
+
+This path will then be added to your PATH environment variable by
+modifying the profile files located at:
+
+  /Users/adeng/.profile
+  /Users/adeng/.zshenv
+
+You can uninstall at any time with rustup self uninstall and
+these changes will be reverted.
+
+Current installation options:
+
+
+   default host triple: x86_64-apple-darwin
+     default toolchain: stable (default)
+               profile: default
+  modify PATH variable: yes
+
+1) Proceed with installation (default)
+2) Customize installation
+3) Cancel installation
+&amp;gt;1
+
+info: profile set to &#39;default&#39;
+info: default host triple is x86_64-apple-darwin
+info: syncing channel updates for &#39;stable-x86_64-apple-darwin&#39;
+676.1 KiB / 676.1 KiB (100 %) 675.9 KiB/s in  1s ETA:  0s
+info: latest update on 2021-03-25, rust version 1.51.0 (2fd73fabe 2021-03-23)
+info: downloading component &#39;cargo&#39;
+  4.3 MiB /   4.3 MiB (100 %) 943.4 KiB/s in  5s ETA:  0s
+info: downloading component &#39;clippy&#39;
+  1.8 MiB /   1.8 MiB (100 %) 956.9 KiB/s in  2s ETA:  0s
+info: downloading component &#39;rust-docs&#39;
+ 15.0 MiB /  15.0 MiB (100 %) 940.0 KiB/s in 17s ETA:  0s
+info: downloading component &#39;rust-std&#39;
+ 23.6 MiB /  23.6 MiB (100 %) 917.5 KiB/s in 27s ETA:  0s
+info: downloading component &#39;rustc&#39;
+ 56.6 MiB /  56.6 MiB (100 %) 792.3 KiB/s in  1m  5s ETA:  0s
+info: downloading component &#39;rustfmt&#39;
+  2.3 MiB /   2.3 MiB (100 %) 943.5 KiB/s in  2s ETA:  0s
+info: installing component &#39;cargo&#39;
+info: using up to 500.0 MiB of RAM to unpack components
+info: installing component &#39;clippy&#39;
+info: installing component &#39;rust-docs&#39;
+ 15.0 MiB /  15.0 MiB (100 %)   6.3 MiB/s in  1s ETA:  0s
+info: installing component &#39;rust-std&#39;
+ 23.6 MiB /  23.6 MiB (100 %)  12.2 MiB/s in  4s ETA:  0s
+info: installing component &#39;rustc&#39;
+ 56.6 MiB /  56.6 MiB (100 %)  14.4 MiB/s in  4s ETA:  0s
+info: installing component &#39;rustfmt&#39;
+info: default toolchain set to &#39;stable-x86_64-apple-darwin&#39;
+
+  stable-x86_64-apple-darwin installed - rustc 1.51.0 (2fd73fabe 2021-03-23)
+
+
+Rust is installed now. Great!
+
+To get started you need Cargo&#39;s bin directory ($HOME/.cargo/bin) in your PATH
+environment variable. Next time you log in this will be done
+automatically.
+
+To configure your current shell, run:
+source $HOME/.cargo/env
+
+$ source $HOME/.cargo/env
+
+$ cargo --version
+cargo 1.51.0 (43b129a20 2021-03-16)
+
+$ rustup --version
+rustup 1.23.1 (3df2264a9 2020-11-30)
+info: This is the version for the rustup toolchain manager, not the rustc compiler.
+info: The currently active `rustc` version is `rustc 1.51.0 (2fd73fabe 2021-03-23)`
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;rustuprust安装器和版本管理工具&#34;&gt;Rustup：Rust安装器和版本管理工具&lt;/h2&gt;
+&lt;p&gt;Rust 的升级非常频繁。如果您安装 Rustup 后已有一段时间，那么很可能您的 Rust 版本已经过时了。运行 &lt;code&gt;rustup update&lt;/code&gt; 获取最新版本的 Rust。&lt;/p&gt;
+&lt;h2 id=&#34;cargorust-的构建工具和包管理器&#34;&gt;Cargo：Rust 的构建工具和包管理器&lt;/h2&gt;
+&lt;p&gt;您在安装 Rustup 时，也会安装 Rust 构建工具和包管理器的最新稳定版，即 Cargo。Cargo 可以做很多事情：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cargo build&lt;/code&gt; 可以构建项目&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cargo run&lt;/code&gt; 可以运行项目&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cargo test&lt;/code&gt; 可以测试项目&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cargo doc&lt;/code&gt; 可以为项目构建文档&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cargo publish&lt;/code&gt; 可以将库发布到 &lt;a class=&#34;link&#34; href=&#34;https://crates.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;crates.io&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;新建项目&#34;&gt;新建项目&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;cargo new hello-rust&lt;/code&gt;会生成一个名为 &lt;code&gt;hello-rust&lt;/code&gt; 的新目录，其中包含以下文件:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hello-rust
+|- Cargo.toml
+|- src
+  |- main.rs
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;Cargo.toml&lt;/code&gt; 为 Rust 的清单文件。其中包含了项目的元数据和依赖库。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;src/main.rs&lt;/code&gt; 为编写应用代码的地方。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cargo run&lt;/code&gt; 您应该会在终端中看到如下内容：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cargo run
+   Compiling hello-rust v0.1.0 (/Users/adeng/_tmp/rust/hello-rust)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.20s
+     Running `target/debug/hello-rust`
+Hello, world!
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;vscode&#34;&gt;VSCode&lt;/h1&gt;
+&lt;p&gt;安装 &lt;code&gt;rust-lang.rust&lt;/code&gt; 插件从 &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=rust-lang.rust&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;the VSCode Marketplace&lt;/a&gt; (or by entering &lt;code&gt;ext install rust-lang.rust&lt;/code&gt; at the command palette Ctrl+P)。&lt;/p&gt;
+&lt;p&gt;打开刚才创建的hello-rust项目 (&lt;code&gt;File &amp;gt; Add Folder to Workspace...&lt;/code&gt;). Open the folder for the whole project (i.e., the folder containing &lt;code&gt;Cargo.toml&lt;/code&gt;, not the &lt;code&gt;src&lt;/code&gt; folder).&lt;/p&gt;
+&lt;p&gt;打开 &lt;code&gt;main.rs&lt;/code&gt;时，会提示安装其他未安装的插件，同意后：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; Executing task in folder hello-rust: rustup component add rust-analysis --toolchain stable-x86_64-apple-darwin &amp;lt;
+
+info: downloading component &#39;rust-analysis&#39;
+info: installing component &#39;rust-analysis&#39;
+info: using up to 500.0 MiB of RAM to unpack components
+
+Terminal will be reused by tasks, press any key to close it.
+
+&amp;gt; Executing task in folder hello-rust: rustup component add rust-src --toolchain stable-x86_64-apple-darwin &amp;lt;
+
+info: downloading component &#39;rust-src&#39;
+info: installing component &#39;rust-src&#39;
+info: using up to 500.0 MiB of RAM to unpack components
+
+Terminal will be reused by tasks, press any key to close it.
+
+&amp;gt; Executing task in folder hello-rust: rustup component add rls --toolchain stable-x86_64-apple-darwin &amp;lt;
+
+info: downloading component &#39;rls&#39;
+info: installing component &#39;rls&#39;
+info: using up to 500.0 MiB of RAM to unpack components
+
+Terminal will be reused by tasks, press any key to close it.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;编辑器使用   &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=rust-lang.rust&#34;&gt;https://marketplace.visualstudio.com/items?itemName=rust-lang.rust&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.rust-lang.org/zh-CN/learn/get-started&#34;&gt;https://www.rust-lang.org/zh-CN/learn/get-started&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Mermaid简介</title>
         <link>http://blog.adenghub.club/p/mermaid%E7%AE%80%E4%BB%8B/</link>
         <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>

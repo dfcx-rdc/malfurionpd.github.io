@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='介绍Rust开发环境搭建'><title>Rust开发环境搭建</title>
+
+<link rel='canonical' href='http://blog.adenghub.club/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><script>
+ 
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?51a26ee9b826c848e0f3eb1665792cce";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<meta property='og:title' content='Rust开发环境搭建'>
+<meta property='og:description' content='介绍Rust开发环境搭建'>
+<meta property='og:url' content='http://blog.adenghub.club/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/'>
+<meta property='og:site_name' content='adeng&#39;s blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='rust' /><meta property='article:tag' content='vscode' /><meta property='article:published_time' content='2021-04-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-04-29T00:00:00&#43;00:00'/><meta property='og:image' content='http://blog.adenghub.club/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/QQ20210429-094005@2x.png' />
+<meta name="twitter:title" content="Rust开发环境搭建">
+<meta name="twitter:description" content="介绍Rust开发环境搭建"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://blog.adenghub.club/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/QQ20210429-094005@2x.png' />
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hua45dea341909f49a2ecaa262b7304d79_632667_300x0_resize_box_2.png" width="300"
+                            height="268" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="http://blog.adenghub.club/">adeng&#39;s blog</a></h1>
+        <h2 class="site-description">漫步月球表面.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="http://blog.adenghub.club/" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                <img src="/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/QQ20210429-094005@2x_huc2435dcf376036f7134453affab0d62c_497879_800x0_resize_box_2.png"
+                        srcset="/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/QQ20210429-094005@2x_huc2435dcf376036f7134453affab0d62c_497879_800x0_resize_box_2.png 800w, /p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/QQ20210429-094005@2x_huc2435dcf376036f7134453affab0d62c_497879_1600x0_resize_box_2.png 1600w"
+                        width="800" 
+                        height="495" 
+                        loading="lazy"
+                        alt="Featured image of post Rust开发环境搭建" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/rust/" >
+                Rust
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">Rust开发环境搭建</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        介绍Rust开发环境搭建
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Apr 29, 2021</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h1 id="初步认识">初步认识</h1>
+<p>拜读了大佬关于Rust的这篇博客 <a class="link" href="https://coolshell.cn/articles/20845.html"  target="_blank" rel="noopener"
+    >RUST语言的编程范式</a>，对这门语言有了大致的认识。没有GC，强大的编译检查，基本上来说，一旦编译通过，代码运行起来是安全的，bug也是很少的。</p>
+<blockquote>
+<p><strong>如果你对Rust的概念认识的不完整，你完全写不出程序，那怕就是很简单的一段代码</strong>。</p>
+</blockquote>
+<p>感觉还是很有必要得着，搭个环境感受下。</p>
+<p>直接参考 <a class="link" href="https://www.rust-lang.org/zh-CN/learn/get-started"  target="_blank" rel="noopener"
+    >官网入门</a> 。</p>
+<h1 id="安装">安装</h1>
+<p>笔者在mac上执行安装命令：</p>
+<pre><code>$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+info: downloading installer
+
+Welcome to Rust!
+
+This will download and install the official compiler for the Rust
+programming language, and its package manager, Cargo.
+
+Rustup metadata and toolchains will be installed into the Rustup
+home directory, located at:
+
+  /Users/adeng/.rustup
+
+This can be modified with the RUSTUP_HOME environment variable.
+
+The Cargo home directory located at:
+
+  /Users/adeng/.cargo
+
+This can be modified with the CARGO_HOME environment variable.
+
+The cargo, rustc, rustup and other commands will be added to
+Cargo's bin directory, located at:
+
+  /Users/adeng/.cargo/bin
+
+This path will then be added to your PATH environment variable by
+modifying the profile files located at:
+
+  /Users/adeng/.profile
+  /Users/adeng/.zshenv
+
+You can uninstall at any time with rustup self uninstall and
+these changes will be reverted.
+
+Current installation options:
+
+
+   default host triple: x86_64-apple-darwin
+     default toolchain: stable (default)
+               profile: default
+  modify PATH variable: yes
+
+1) Proceed with installation (default)
+2) Customize installation
+3) Cancel installation
+&gt;1
+
+info: profile set to 'default'
+info: default host triple is x86_64-apple-darwin
+info: syncing channel updates for 'stable-x86_64-apple-darwin'
+676.1 KiB / 676.1 KiB (100 %) 675.9 KiB/s in  1s ETA:  0s
+info: latest update on 2021-03-25, rust version 1.51.0 (2fd73fabe 2021-03-23)
+info: downloading component 'cargo'
+  4.3 MiB /   4.3 MiB (100 %) 943.4 KiB/s in  5s ETA:  0s
+info: downloading component 'clippy'
+  1.8 MiB /   1.8 MiB (100 %) 956.9 KiB/s in  2s ETA:  0s
+info: downloading component 'rust-docs'
+ 15.0 MiB /  15.0 MiB (100 %) 940.0 KiB/s in 17s ETA:  0s
+info: downloading component 'rust-std'
+ 23.6 MiB /  23.6 MiB (100 %) 917.5 KiB/s in 27s ETA:  0s
+info: downloading component 'rustc'
+ 56.6 MiB /  56.6 MiB (100 %) 792.3 KiB/s in  1m  5s ETA:  0s
+info: downloading component 'rustfmt'
+  2.3 MiB /   2.3 MiB (100 %) 943.5 KiB/s in  2s ETA:  0s
+info: installing component 'cargo'
+info: using up to 500.0 MiB of RAM to unpack components
+info: installing component 'clippy'
+info: installing component 'rust-docs'
+ 15.0 MiB /  15.0 MiB (100 %)   6.3 MiB/s in  1s ETA:  0s
+info: installing component 'rust-std'
+ 23.6 MiB /  23.6 MiB (100 %)  12.2 MiB/s in  4s ETA:  0s
+info: installing component 'rustc'
+ 56.6 MiB /  56.6 MiB (100 %)  14.4 MiB/s in  4s ETA:  0s
+info: installing component 'rustfmt'
+info: default toolchain set to 'stable-x86_64-apple-darwin'
+
+  stable-x86_64-apple-darwin installed - rustc 1.51.0 (2fd73fabe 2021-03-23)
+
+
+Rust is installed now. Great!
+
+To get started you need Cargo's bin directory ($HOME/.cargo/bin) in your PATH
+environment variable. Next time you log in this will be done
+automatically.
+
+To configure your current shell, run:
+source $HOME/.cargo/env
+
+$ source $HOME/.cargo/env
+
+$ cargo --version
+cargo 1.51.0 (43b129a20 2021-03-16)
+
+$ rustup --version
+rustup 1.23.1 (3df2264a9 2020-11-30)
+info: This is the version for the rustup toolchain manager, not the rustc compiler.
+info: The currently active `rustc` version is `rustc 1.51.0 (2fd73fabe 2021-03-23)`
+</code></pre><h2 id="rustuprust安装器和版本管理工具">Rustup：Rust安装器和版本管理工具</h2>
+<p>Rust 的升级非常频繁。如果您安装 Rustup 后已有一段时间，那么很可能您的 Rust 版本已经过时了。运行 <code>rustup update</code> 获取最新版本的 Rust。</p>
+<h2 id="cargorust-的构建工具和包管理器">Cargo：Rust 的构建工具和包管理器</h2>
+<p>您在安装 Rustup 时，也会安装 Rust 构建工具和包管理器的最新稳定版，即 Cargo。Cargo 可以做很多事情：</p>
+<ul>
+<li><code>cargo build</code> 可以构建项目</li>
+<li><code>cargo run</code> 可以运行项目</li>
+<li><code>cargo test</code> 可以测试项目</li>
+<li><code>cargo doc</code> 可以为项目构建文档</li>
+<li><code>cargo publish</code> 可以将库发布到 <a class="link" href="https://crates.io/"  target="_blank" rel="noopener"
+    >crates.io</a></li>
+</ul>
+<h1 id="新建项目">新建项目</h1>
+<p><code>cargo new hello-rust</code>会生成一个名为 <code>hello-rust</code> 的新目录，其中包含以下文件:</p>
+<pre><code>hello-rust
+|- Cargo.toml
+|- src
+  |- main.rs
+</code></pre><p><code>Cargo.toml</code> 为 Rust 的清单文件。其中包含了项目的元数据和依赖库。</p>
+<p><code>src/main.rs</code> 为编写应用代码的地方。</p>
+<p><code>cargo run</code> 您应该会在终端中看到如下内容：</p>
+<pre><code>$ cargo run
+   Compiling hello-rust v0.1.0 (/Users/adeng/_tmp/rust/hello-rust)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.20s
+     Running `target/debug/hello-rust`
+Hello, world!
+</code></pre><h1 id="vscode">VSCode</h1>
+<p>安装 <code>rust-lang.rust</code> 插件从 <a class="link" href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust"  target="_blank" rel="noopener"
+    >the VSCode Marketplace</a> (or by entering <code>ext install rust-lang.rust</code> at the command palette Ctrl+P)。</p>
+<p>打开刚才创建的hello-rust项目 (<code>File &gt; Add Folder to Workspace...</code>). Open the folder for the whole project (i.e., the folder containing <code>Cargo.toml</code>, not the <code>src</code> folder).</p>
+<p>打开 <code>main.rs</code>时，会提示安装其他未安装的插件，同意后：</p>
+<pre><code>&gt; Executing task in folder hello-rust: rustup component add rust-analysis --toolchain stable-x86_64-apple-darwin &lt;
+
+info: downloading component 'rust-analysis'
+info: installing component 'rust-analysis'
+info: using up to 500.0 MiB of RAM to unpack components
+
+Terminal will be reused by tasks, press any key to close it.
+
+&gt; Executing task in folder hello-rust: rustup component add rust-src --toolchain stable-x86_64-apple-darwin &lt;
+
+info: downloading component 'rust-src'
+info: installing component 'rust-src'
+info: using up to 500.0 MiB of RAM to unpack components
+
+Terminal will be reused by tasks, press any key to close it.
+
+&gt; Executing task in folder hello-rust: rustup component add rls --toolchain stable-x86_64-apple-darwin &lt;
+
+info: downloading component 'rls'
+info: installing component 'rls'
+info: using up to 500.0 MiB of RAM to unpack components
+
+Terminal will be reused by tasks, press any key to close it.
+</code></pre><p>编辑器使用   <a href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust">https://marketplace.visualstudio.com/items?itemName=rust-lang.rust</a></p>
+<p><a href="https://www.rust-lang.org/zh-CN/learn/get-started">https://www.rust-lang.org/zh-CN/learn/get-started</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/rust/">rust</a>
+        
+            <a href="/tags/vscode/">vscode</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 adeng&#39;s blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
