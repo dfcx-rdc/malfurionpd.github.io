@@ -149,6 +149,7 @@ info: The currently active `rustc` version is `rustc 1.51.0 (2fd73fabe 2021-03-2
      Running `target/debug/hello-rust`
 Hello, world!
 &lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;vscode&#34;&gt;VSCode&lt;/h1&gt;
+&lt;h2 id=&#34;rust-插件&#34;&gt;Rust 插件&lt;/h2&gt;
 &lt;p&gt;安装 &lt;code&gt;rust-lang.rust&lt;/code&gt; 插件从 &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=rust-lang.rust&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;the VSCode Marketplace&lt;/a&gt; (or by entering &lt;code&gt;ext install rust-lang.rust&lt;/code&gt; at the command palette Ctrl+P)。&lt;/p&gt;
 &lt;p&gt;打开刚才创建的hello-rust项目 (&lt;code&gt;File &amp;gt; Add Folder to Workspace...&lt;/code&gt;). Open the folder for the whole project (i.e., the folder containing &lt;code&gt;Cargo.toml&lt;/code&gt;, not the &lt;code&gt;src&lt;/code&gt; folder).&lt;/p&gt;
@@ -176,8 +177,14 @@ info: installing component &#39;rls&#39;
 info: using up to 500.0 MiB of RAM to unpack components
 
 Terminal will be reused by tasks, press any key to close it.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;编辑器使用   &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=rust-lang.rust&#34;&gt;https://marketplace.visualstudio.com/items?itemName=rust-lang.rust&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.rust-lang.org/zh-CN/learn/get-started&#34;&gt;https://www.rust-lang.org/zh-CN/learn/get-started&lt;/a&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;codelldb-插件&#34;&gt;CodeLLDB 插件&lt;/h2&gt;
+&lt;p&gt;搜索插件CodeLLDB并安装。&lt;/p&gt;
+&lt;p&gt;调试配置文件里新建，选择LLDB类型，提示发现&lt;code&gt;Cargo.toml&lt;/code&gt;是否根据该文件创建配置文件，选是就ok了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://notebook.qiniu.adenghub.club/image-20210429142736896.png&#34; alt=&#34;image-20210429142736896&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;这就是一名 Rustacean 了！开始愉快玩耍。&lt;/p&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jianshu.com/p/cf45d95ada26&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;VS Code中的文件夹(Folder)与工作区(Workspace)&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>

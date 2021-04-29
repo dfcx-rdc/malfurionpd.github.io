@@ -187,6 +187,8 @@ Hello, world!
 
 # VSCode 
 
+## Rust 插件
+
 安装 `rust-lang.rust` 插件从 [the VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust) (or by entering `ext install rust-lang.rust` at the command palette Ctrl+P)。
 
 打开刚才创建的hello-rust项目 (`File > Add Folder to Workspace...`). Open the folder for the whole project (i.e., the folder containing `Cargo.toml`, not the `src` folder).
@@ -223,11 +225,23 @@ Terminal will be reused by tasks, press any key to close it.
 
 
 
+## CodeLLDB 插件
+
+搜索插件CodeLLDB并安装。
+
+调试配置文件里新建，选择LLDB类型，提示发现`Cargo.toml`是否根据该文件创建配置文件，选是就ok了。
+
+![image-20210429142736896](https://notebook.qiniu.adenghub.club/image-20210429142736896.png)
 
 
-编辑器使用   https://marketplace.visualstudio.com/items?itemName=rust-lang.rust
 
-https://www.rust-lang.org/zh-CN/learn/get-started
+这就是一名 Rustacean 了！开始愉快玩耍。
 
 
+
+
+
+# 参考
+
+[VS Code中的文件夹(Folder)与工作区(Workspace)](https://www.jianshu.com/p/cf45d95ada26)
 

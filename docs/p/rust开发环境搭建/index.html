@@ -377,6 +377,7 @@ info: The currently active `rustc` version is `rustc 1.51.0 (2fd73fabe 2021-03-2
      Running `target/debug/hello-rust`
 Hello, world!
 </code></pre><h1 id="vscode">VSCode</h1>
+<h2 id="rust-插件">Rust 插件</h2>
 <p>安装 <code>rust-lang.rust</code> 插件从 <a class="link" href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust"  target="_blank" rel="noopener"
     >the VSCode Marketplace</a> (or by entering <code>ext install rust-lang.rust</code> at the command palette Ctrl+P)。</p>
 <p>打开刚才创建的hello-rust项目 (<code>File &gt; Add Folder to Workspace...</code>). Open the folder for the whole project (i.e., the folder containing <code>Cargo.toml</code>, not the <code>src</code> folder).</p>
@@ -404,8 +405,14 @@ info: installing component 'rls'
 info: using up to 500.0 MiB of RAM to unpack components
 
 Terminal will be reused by tasks, press any key to close it.
-</code></pre><p>编辑器使用   <a href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust">https://marketplace.visualstudio.com/items?itemName=rust-lang.rust</a></p>
-<p><a href="https://www.rust-lang.org/zh-CN/learn/get-started">https://www.rust-lang.org/zh-CN/learn/get-started</a></p>
+</code></pre><h2 id="codelldb-插件">CodeLLDB 插件</h2>
+<p>搜索插件CodeLLDB并安装。</p>
+<p>调试配置文件里新建，选择LLDB类型，提示发现<code>Cargo.toml</code>是否根据该文件创建配置文件，选是就ok了。</p>
+<p><img src="https://notebook.qiniu.adenghub.club/image-20210429142736896.png" alt="image-20210429142736896"  /></p>
+<p>这就是一名 Rustacean 了！开始愉快玩耍。</p>
+<h1 id="参考">参考</h1>
+<p><a class="link" href="https://www.jianshu.com/p/cf45d95ada26"  target="_blank" rel="noopener"
+    >VS Code中的文件夹(Folder)与工作区(Workspace)</a></p>
 
 </section>
 
