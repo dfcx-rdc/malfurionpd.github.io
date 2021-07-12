@@ -151,6 +151,7 @@ Rust 的升级非常频繁。如果您安装 Rustup 后已有一段时间，那�
 您在安装 Rustup 时，也会安装 Rust 构建工具和包管理器的最新稳定版，即 Cargo。Cargo 可以做很多事情：
 
 - `cargo build` 可以构建项目
+- `cargo check` 可以检查是否可编译
 - `cargo run` 可以运行项目
 - `cargo test` 可以测试项目
 - `cargo doc` 可以为项目构建文档
