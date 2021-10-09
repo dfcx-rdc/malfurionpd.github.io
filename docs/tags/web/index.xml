@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web on adeng&#39;s blog</title>
+    <link>http://blog.adenghub.club/tags/web/</link>
+    <description>Recent content in web on adeng&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust Web 开发技术栈</title>
+      <link>http://blog.adenghub.club/p/rust-web-%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E6%A0%88/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/p/rust-web-%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E6%A0%88/</guid>
+      <description>awesome-rust
+https://sergey-melnychuk.github.io/2019/08/01/rust-mio-tcp-server/
+Network programming Tokio Tokio 官网
+Tokio 中文文档
+tokio
+MIO https://github.com/tokio-rs/mio
+Low-level TCP server in Rust with MIO
+Web Rocket Rocket
+actix-web actix-web
+hyper hyper
+ORM diesel diesel 官网
+diesel github
+sqlx sqlx github</description>
+    </item>
+    
+  </channel>
+</rss>

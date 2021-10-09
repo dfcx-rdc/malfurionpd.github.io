@@ -5,17 +5,7 @@
 
 <link rel='canonical' href='http://blog.adenghub.club/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><script>
- 
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?51a26ee9b826c848e0f3eb1665792cce";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-<meta property='og:title' content='Rust开发环境搭建'>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Rust开发环境搭建'>
 <meta property='og:description' content='介绍Rust开发环境搭建'>
 <meta property='og:url' content='http://blog.adenghub.club/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/'>
 <meta property='og:site_name' content='adeng&#39;s blog'>
@@ -24,7 +14,9 @@ var _hmt = _hmt || [];
 <meta name="twitter:description" content="介绍Rust开发环境搭建"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='http://blog.adenghub.club/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/QQ20210429-094005@2x.png' />
     </head>
-    <body class="">
+    <body class="
+    article-page 
+">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -41,13 +33,19 @@ var _hmt = _hmt || [];
         if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
             
 
-            document.body.dataset.scheme = 'dark';
+            document.documentElement.dataset.scheme = 'dark';
         } else {
-            document.body.dataset.scheme = 'light';
+            document.documentElement.dataset.scheme = 'light';
         }
     })();
-</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
-            <aside class="sidebar left-sidebar sticky">
+</script>
+<div class="container main-container flex 
+    
+        on-phone--column extended
+    
+">
+    
+        <aside class="sidebar left-sidebar sticky">
     <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
@@ -56,14 +54,15 @@ var _hmt = _hmt || [];
 
     <header class="site-info">
         
+            
             <figure class="site-avatar">
                 
                     
                     
                     
                         
-                        <img src="/img/avatar_hua45dea341909f49a2ecaa262b7304d79_632667_300x0_resize_box_2.png" width="300"
-                            height="268" class="site-logo" loading="lazy" alt="Avatar">
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
 
@@ -71,6 +70,7 @@ var _hmt = _hmt || [];
                     <span class="emoji">🍥</span>
                 
             </figure>
+            
         
         <h1 class="site-name"><a href="http://blog.adenghub.club/">adeng&#39;s blog</a></h1>
         <h2 class="site-description">漫步月球表面.</h2>
@@ -82,7 +82,7 @@ var _hmt = _hmt || [];
         
 
         <li >
-            <a href='/'>
+            <a href='/' >
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -101,7 +101,7 @@ var _hmt = _hmt || [];
         
 
         <li >
-            <a href='/about/'>
+            <a href='/about/' >
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -119,7 +119,7 @@ var _hmt = _hmt || [];
         
 
         <li >
-            <a href='/archives/'>
+            <a href='/archives/' >
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -138,7 +138,7 @@ var _hmt = _hmt || [];
         
 
         <li >
-            <a href='/search/'>
+            <a href='/search/' >
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -178,20 +178,8 @@ var _hmt = _hmt || [];
     </ol>
 </aside>
 
-            <main class="main full-width">
-    <div id="article-toolbar">
-        <a href="http://blog.adenghub.club/" class="back-home">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="15 6 9 12 15 18" />
-</svg>
-
-
-
-            <span>Back</span>
-        </a>
-    </div>
-
+    
+<main class="main full-width">
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
@@ -226,17 +214,29 @@ var _hmt = _hmt || [];
     <h3 class="article-subtitle">
         介绍Rust开发环境搭建
     </h3>
+    
+
+    
     <footer class="article-time">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
 </svg>
+                <time class="article-time--published">Apr 29, 2021</time>
+            </div>
+        
 
-
-
-        <time class="article-time--published">Apr 29, 2021</time>
-    </footer></div>
+        
+    </footer>
+    
+</div>
 </header>
 
     <section class="article-content">
@@ -356,6 +356,7 @@ info: The currently active `rustc` version is `rustc 1.51.0 (2fd73fabe 2021-03-2
 <p>您在安装 Rustup 时，也会安装 Rust 构建工具和包管理器的最新稳定版，即 Cargo。Cargo 可以做很多事情：</p>
 <ul>
 <li><code>cargo build</code> 可以构建项目</li>
+<li><code>cargo check</code> 可以检查是否可编译</li>
 <li><code>cargo run</code> 可以运行项目</li>
 <li><code>cargo test</code> 可以测试项目</li>
 <li><code>cargo doc</code> 可以为项目构建文档</li>
@@ -408,7 +409,20 @@ Terminal will be reused by tasks, press any key to close it.
 </code></pre><h2 id="codelldb-插件">CodeLLDB 插件</h2>
 <p>搜索插件CodeLLDB并安装。</p>
 <p>调试配置文件里新建，选择LLDB类型，提示发现<code>Cargo.toml</code>是否根据该文件创建配置文件，选是就ok了。</p>
-<p><img src="https://notebook.qiniu.adenghub.club/image-20210429142736896.png" alt="image-20210429142736896"  /></p>
+<p><figure 
+	>
+	<a href="https://notebook.qiniu.adenghub.club/image-20210429142736896.png" >
+		<img src="https://notebook.qiniu.adenghub.club/image-20210429142736896.png"
+			
+			
+			
+			loading="lazy"
+			alt="image-20210429142736896">
+	</a>
+	
+	<figcaption>image-20210429142736896</figcaption>
+	
+</figure></p>
 <p>这就是一名 Rustacean 了！开始愉快玩耍。</p>
 <h1 id="参考">参考</h1>
 <p><a class="link" href="https://www.jianshu.com/p/cf45d95ada26"  target="_blank" rel="noopener"
@@ -442,15 +456,67 @@ Terminal will be reused by tasks, press any key to close it.
     </section>
     </footer>
 
+
     
 </article>
 
     <aside class="related-contents--wrapper">
     
     
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/p/rust-web-%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E6%A0%88/">
+        
+        
+            <div class="article-image">
+                <img src="/p/rust-web-%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E6%A0%88/_hu1e557a83aea5695b0322fb3d0e67e778_1607129_4388a2baa003b26afbb8118470715355.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-wTZ0nfi/qqwim6m3sSnshQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Rust Web 开发技术栈</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/rust%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
+        
+        
+            <div class="article-image">
+                <img src="/p/rust%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/WX20211009-092716@2x.5727d0a70baab02981cb54c52a5c3c46_hue034145adb14794c92e0ad87aaf2e103_1602411_250x150_fill_box_smart1_2.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-VyfQpwuqsCmBy1TFKlw8Rg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Rust编程之道读书笔记</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
 </aside>
 
-
+     
     
         
     <div class="disqus-container">
@@ -508,9 +574,12 @@ Terminal will be reused by tasks, press any key to close it.
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
+
+
+    
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
     
@@ -587,7 +656,10 @@ Terminal will be reused by tasks, press any key to close it.
                 rel="stylesheet" 
                 href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
             >
+
             </main>
+    
+
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"

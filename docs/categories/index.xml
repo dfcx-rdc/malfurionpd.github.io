@@ -6,13 +6,49 @@
     <description>Recent content in Categories on adeng&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>notes</title>
+      <link>http://blog.adenghub.club/categories/notes/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/categories/notes/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Rust</title>
       <link>http://blog.adenghub.club/categories/rust/</link>
-      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
       <guid>http://blog.adenghub.club/categories/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>http://blog.adenghub.club/categories/spring/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/categories/spring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VSCode</title>
+      <link>http://blog.adenghub.club/categories/vscode/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/categories/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>http://blog.adenghub.club/categories/web/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/categories/web/</guid>
       <description></description>
     </item>
     
@@ -85,6 +121,15 @@
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>http://blog.adenghub.club/categories/test-with-whitespaces/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jenkins</title>
+      <link>http://blog.adenghub.club/categories/jenkins/</link>
+      <pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/categories/jenkins/</guid>
       <description></description>
     </item>
     

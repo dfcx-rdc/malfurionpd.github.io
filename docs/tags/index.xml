@@ -6,22 +6,49 @@
     <description>Recent content in Tags on adeng&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>notes</title>
+      <link>http://blog.adenghub.club/tags/notes/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/tags/notes/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>rust</title>
       <link>http://blog.adenghub.club/tags/rust/</link>
-      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
       <guid>http://blog.adenghub.club/tags/rust/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>spring</title>
+      <link>http://blog.adenghub.club/tags/spring/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/tags/spring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>vscode</title>
       <link>http://blog.adenghub.club/tags/vscode/</link>
-      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
       <guid>http://blog.adenghub.club/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>http://blog.adenghub.club/tags/web/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/tags/web/</guid>
       <description></description>
     </item>
     
@@ -130,6 +157,15 @@
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>http://blog.adenghub.club/tags/emoji/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jenkins</title>
+      <link>http://blog.adenghub.club/tags/jenkins/</link>
+      <pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/tags/jenkins/</guid>
       <description></description>
     </item>
     

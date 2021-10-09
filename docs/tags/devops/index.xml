@@ -16,8 +16,31 @@
       <description>本文即是本站的搭建方式。
 目前Github Pages还挺稳定，托管起来也比较省心。
 Github Pages 仓库新建 按照 Github Pages官网 说明，新建一个和github用户名一样的Repo，格式为 username.github.io。
+ image-20210312135040716 
 Hugo 安装 参考 Hugo官网 本地安装hugo，笔者Mac使用brew安装:
 $ brew install hugo ··· $ hugo version Hugo Static Site Generator v0.80.0/extended darwin/amd64 BuildDate: unknown Site 初始化 ## 新建hugo站点 $ hugo new site malfurionpd.github.io $ cd malfurionpd.github.io ## 初始化git库 $ echo &amp;quot;# malfurionpd.github.io&amp;quot; &amp;gt;&amp;gt; README.md $ git init $ git add README.md $ git commit -m &amp;quot;first commit&amp;quot; $ git branch -M main $ git remote add origin git@github.</description>
+    </item>
+    
+    <item>
+      <title>Jenkins 初探</title>
+      <link>http://blog.adenghub.club/p/jenkins-%E5%88%9D%E6%8E%A2/</link>
+      <pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/p/jenkins-%E5%88%9D%E6%8E%A2/</guid>
+      <description>缘由 本来尝试DockerFile加DaoCloud搞定持续集成的，发现还是很多地方绕不开，比如Docker镜像构建速度，Play项目构建时依赖解析速度，可视化等等，开始重新考虑Jenkins。
+之前对Jenkins印象不好估计是受UI影响了，这次打开官网，Blue Ocean眼前一亮啊，兴致大起。
+ Blue Ocean1.png 
+ Blue Ocean2.png 
+安装 直接docker走起。
+docker pull jenkins 这里Mac用户推荐用Docker官网的dmg安装，配合DaoCloud的加速器，镜像下载速度飞起。
+#运行
+docker run -d -p 49001:8080 -v /Users/xxx/Documents/Docker/Volume/Jenkins:/var/jenkins_home -t jenkins 启动后访问 http://localhost:49001/ 会要求输入secrets token。
+ Secrets.png 
+可以在本地Volume里找到，也可以进入镜像查看。
+docker exec -it 4b7112ec2f2c /bin/sh cat /var/jenkins_home/secrets/initialAdminPassword 输入后，开始初始化，安装默认Plugins。
+ Plugins.png 
+然后添加一个Admin账号，就进入控制台了。
+ Console.png</description>
     </item>
     
   </channel>

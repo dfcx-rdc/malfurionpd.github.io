@@ -16,6 +16,7 @@
       <description>本文即是本站的搭建方式。
 目前Github Pages还挺稳定，托管起来也比较省心。
 Github Pages 仓库新建 按照 Github Pages官网 说明，新建一个和github用户名一样的Repo，格式为 username.github.io。
+ image-20210312135040716 
 Hugo 安装 参考 Hugo官网 本地安装hugo，笔者Mac使用brew安装:
 $ brew install hugo ··· $ hugo version Hugo Static Site Generator v0.80.0/extended darwin/amd64 BuildDate: unknown Site 初始化 ## 新建hugo站点 $ hugo new site malfurionpd.github.io $ cd malfurionpd.github.io ## 初始化git库 $ echo &amp;quot;# malfurionpd.github.io&amp;quot; &amp;gt;&amp;gt; README.md $ git init $ git add README.md $ git commit -m &amp;quot;first commit&amp;quot; $ git branch -M main $ git remote add origin git@github.</description>
     </item>

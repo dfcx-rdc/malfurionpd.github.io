@@ -12,7 +12,7 @@ categories = [
     "Rust", "notes"
 ]
 
-image = "WX20210420-201336@2x.png"
+image = "WX20211009-092716@2x.png"
 
 
 

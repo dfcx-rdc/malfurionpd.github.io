@@ -6,7 +6,171 @@
         <description>Recent content on adeng&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Rust Web 开发技术栈</title>
+        <link>http://blog.adenghub.club/p/rust-web-%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E6%A0%88/</link>
+        <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+        
+        <guid>http://blog.adenghub.club/p/rust-web-%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E6%A0%88/</guid>
+        <description>&lt;img src="http://blog.adenghub.club/p/rust-web-%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E6%A0%88/v2-83685de08789a0f9ffe9cfb9e38ba354_r.jpg" alt="Featured image of post Rust Web 开发技术栈" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/rust-unofficial/awesome-rust&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;awesome-rust&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sergey-melnychuk.github.io/2019/08/01/rust-mio-tcp-server/&#34;&gt;https://sergey-melnychuk.github.io/2019/08/01/rust-mio-tcp-server/&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;network-programming&#34;&gt;Network programming&lt;/h1&gt;
+&lt;h2 id=&#34;tokio&#34;&gt;Tokio&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://tokio.rs/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Tokio 官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://tokio-zh.github.io/document/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Tokio 中文文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/tokio-rs/tokio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;tokio&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;mio&#34;&gt;MIO&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/tokio-rs/mio&#34;&gt;https://github.com/tokio-rs/mio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://sergey-melnychuk.github.io/2019/08/01/rust-mio-tcp-server/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Low-level TCP server in Rust with MIO&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web&#34;&gt;Web&lt;/h1&gt;
+&lt;h2 id=&#34;rocket&#34;&gt;Rocket&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/SergioBenitez/Rocket&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Rocket&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;actix-web&#34;&gt;actix-web&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/actix/actix-web&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;actix-web&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;hyper&#34;&gt;hyper&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/hyperium/hyper&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hyper&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;orm&#34;&gt;ORM&lt;/h1&gt;
+&lt;h2 id=&#34;diesel&#34;&gt;diesel&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://diesel.rs/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;diesel 官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/diesel-rs/diesel&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;diesel github&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;sqlx&#34;&gt;sqlx&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/launchbadge/sqlx&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;sqlx github&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Rust编程之道读书笔记</title>
+        <link>http://blog.adenghub.club/p/rust%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+        <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+        
+        <guid>http://blog.adenghub.club/p/rust%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="http://blog.adenghub.club/p/rust%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/WX20211009-092716@2x.png" alt="Featured image of post Rust编程之道读书笔记" /&gt;&lt;h1 id=&#34;第一章-brbr新时代的语言&#34;&gt;第一章 &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;新时代的语言&lt;/h1&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;不谋全局者，不足谋一域。&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;为了达成目标， Rust语言遵循了三条设计哲学:&lt;/p&gt;
+&lt;p&gt;*内存安全&lt;/p&gt;
+&lt;p&gt;*零成本 抽象&lt;/p&gt;
+&lt;p&gt;*实用性&lt;/p&gt;
+&lt;p&gt;像 CIC++语言的类型系统 就不是类型安全的，因为它 们并没有对 无意义 的行为进行 约束。一个最简单 的例子就 是数组 越界，在 CIC++语言中并不对其做任何检查，导致发生了语 言规范规定之外的行为，也就是 未定义行为 (Undefined Behavior)。&lt;/p&gt;
+&lt;p&gt;C++中的RAII机制 Resource Acquisition Is Initialization&lt;/p&gt;
+&lt;p&gt;LLVM &lt;a href=&#34;https://www.jianshu.com/p/1367dad95445&#34;&gt;https://www.jianshu.com/p/1367dad95445&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在进一步学习之前，我们有必要了解一下 Rust代码是如何执行的。 Rust是跨平台语言， 一次编译，到处运行，这得益于 LLVM。 Rust编译器是一个 LLVM 编译前端，它将代码编译 为 LLVMIR， 然后经过 LLVM 编译为相应的平台目标 。&lt;/p&gt;
+&lt;p&gt;Rust 源码经过分词和解析，生成 AST C抽象语法树)。 然后把 AST 进一步简化处理为 HIR CHigh-level IR)，目的是让编译器更方便地做类型检 查。 HIR 会进一步被编译为 MIR (MiddleIR)，这是一种中间表示，它在 Rustl.12版本中被引入， 主要用于以下目的。&lt;/p&gt;
+&lt;p&gt;.缩短编译时间 。 MIR 可以帮助实现增量编译，当你修改完代码重新编译的时候 ， 编译 器只 计 算更改过的部分，从而缩短了编译时间 。&lt;/p&gt;
+&lt;p&gt;·缩短执行时间 。 MIR 可以 在 LLVM 编 译之前实现更细粒度的优 化，因为 单纯依赖 LLVM 的优化粒度太粗，而且 Rust无法控制，引入 MIR就增加了更多的优化空间。&lt;/p&gt;
+&lt;p&gt;.更精确的类型检查 。 MIR 将帮助实现更灵活的借用检查，从而可以提升 Rust 的使用 体验 。&lt;/p&gt;
+&lt;p&gt;最终， MIR 会被翻译为 LLVM IR， 然后被 LLVM 的处理编译为能在各个平台上运行的 目标机器码 。&lt;/p&gt;
+&lt;h1 id=&#34;第二章-语言精要&#34;&gt;第二章 语言精要&lt;/h1&gt;
+&lt;p&gt;Rust 中 的语法可以分成两大类 :语句 (Statement) 和表达式 (Expression)。语句是指&lt;/p&gt;
+&lt;p&gt;要执行的一些操作和产生副作用的表达式。表达式主要用于计算求值。
+i吾句又分为两种: 声明语句 ( Declaration statement )和 表达式语句 ( Expression&lt;/p&gt;
+&lt;p&gt;· 声明语句，用于声明各种语言项 Cltem)，包括声明变量、静态变量、常量、 结构体、 函数等，以及通过 extern 和 use 关键字引入包和模块等。&lt;/p&gt;
+&lt;p&gt;· 表达式语句，特指以分号结尾的表达式。此类表达式求值结果将会被舍弃 ， 并总是返 回单元类型() 。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不是很清楚···&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;函数体的花括号识别为块表达式( Block Expression)&lt;/p&gt;
+&lt;p&gt;块中的最后一个表达式是宏语句，所以返回单元 值()。&lt;/p&gt;
+&lt;h2 id=&#34;23-变量与绑定&#34;&gt;2.3 变量与绑定&lt;/h2&gt;
+&lt;p&gt;通过 let关键字来创建变量，这是 Rust语言从函数式语言中借鉴的语法形式。 let创建的 变量 一 般称为 绑定 (Binding)，它表明了标识符( Identifier) 和|值( Value)之 间 建立 的 一 种 关联关系。&lt;/p&gt;
+&lt;p&gt;Rust 中 的表达式一般可以分为 位置表达式 (Place Expression )和 值表达式 (Value Expression)。在其他语言中， 一般 叫作 左值 CLValue)和右值( RValue)。&lt;/p&gt;
+&lt;p&gt;从语义角度来说，位置表达式代表了持久性数据，值表达式代表了临时数据 。位置表达 式一般有持久的状态，值表达式要么是字面量，要么是表达式求值过程中创建的临时值。&lt;/p&gt;
+&lt;p&gt;表达式的求值过程在不同的上下文中会有不同的结果。求值上下文也分为 位置上下文 (Place Context)和值上下文 (Value Context)。下面几种表达式属于位置上下文:&lt;/p&gt;
+&lt;p&gt;·赋值或者复合赋值语句左侧的操作数 。
+· 一元 引用表达式的独立操作数 。
+·包含隐式借用(引用)的操作数 。
+• match 判别式或 let 绑定右侧在使用 ref模式匹配的时 候也是位置上下文。&lt;/p&gt;
+&lt;p&gt;除了上述几种情况，其余表达式都属于值上下文 。值表达式不能 出现在位置上下文中， 如代码清单 2-3 所示 。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;还没什么概念，待验证···&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;24-函数与闭包&#34;&gt;2.4 函数与闭包&lt;/h2&gt;
+&lt;p&gt;Rust 语言的作用域是静态作用 i茧，即词法作用域( Lexical Scope)。 由一对花括号来开 辟作用域， 其作用域在词法分析阶段就巳经确定了 ， 不会动态改变。&lt;/p&gt;
+&lt;p&gt;在 Rust中，函数为一等公民。这意味着，函数自身就可以作为函数的参数和返回值使用。&lt;/p&gt;
+&lt;p&gt;注意这里直接使用函数的名字来作为函数指针 。&lt;/p&gt;
+&lt;p&gt;Rust编译器也可以像 C++或D语言那样，拥有编译时函数执行(Compile-TimeFunction Execution, CTFE)的能力 。&lt;/p&gt;
+&lt;p&gt;除了 const fn， 官方还在实现 const generics 特性 。&lt;/p&gt;
+&lt;p&gt;闭包也叫匿名函数 。 闭包有以下几个特点 :&lt;/p&gt;
+&lt;p&gt;.可以像函数 一样被调用 。
+·可以捕 获上下文环境中的自由变 量。 .可以自 动推断输入和返回的类型 。&lt;/p&gt;
+&lt;p&gt;闭包也可以作为函数参数和返回值， 但使用起来略有区别。&lt;/p&gt;
+&lt;p&gt;Rust中闭包实际上就是由一个匿名结构体和 trait来组合实现的。&lt;/p&gt;
+&lt;p&gt;闭包同样也可以作为返回值&lt;/p&gt;
+&lt;p&gt;在代码清单 2-15 中使用了 imp! Fn(i32) -&amp;gt; i32 作为函数的返回值，它表示实现 Fn(i32) -&amp;gt; 的类型。&lt;/p&gt;
+&lt;h2 id=&#34;25-流程控制&#34;&gt;2.5 流程控制&lt;/h2&gt;
+&lt;p&gt;在 Rust 语言中， match 分支左边就是模式，右边就是执行代码 。 模式匹配同时也是一个 表达式，和 if表达式类似，所有分支必须返回同一个类型。&lt;/p&gt;
+&lt;h2 id=&#34;26-基本数据类型&#34;&gt;2.6 基本数据类型&lt;/h2&gt;
+&lt;h2 id=&#34;210-泛型和trait&#34;&gt;2.10 泛型和trait&lt;/h2&gt;
+&lt;p&gt;代码第 25行和第 26行通过 fly_static::&lt;!-- raw HTML omitted --&gt;(duck)调用了 Duck实现的的 方法， 并返回 tmeo&lt;/p&gt;
+&lt;p&gt;上面这种调用方式在 Rust 中 叫静态分发 。 Rust 编译器会为 何一static::&lt;!-- raw HTML omitted --&gt;(pig)和 fly_static: :&lt;!-- raw HTML omitted --&gt;(duck)这两个具体类型的调用生成特殊化的代码。 也就是说，对于 编译器来 说，这种 抽 象并不存在，因为在编译阶段，泛型己经被展开为具体类 型的代码 。&lt;/p&gt;
+&lt;p&gt;代码第 27 行和第 28 行分别调用了 fly_dyn(&amp;amp;Pig)和 fly dyn(&amp;amp;Duck)，也可以 实现同样的 效果。但是 fly dyn 函数是动态分发方式的， 它会在运行时查找相应类型的方法， 会带来一 定的运行 时开销， 不过这种开销很小。&lt;/p&gt;
+&lt;h1 id=&#34;thought&#34;&gt;Thought&lt;/h1&gt;
+&lt;p&gt;全书内容都是MD格式可以覆盖的！&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>VSCode spring开发环境配置</title>
+        <link>http://blog.adenghub.club/p/vscode-spring%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+        <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+        
+        <guid>http://blog.adenghub.club/p/vscode-spring%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="http://blog.adenghub.club/p/vscode-spring%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/WX20211009-092835@2x.png" alt="Featured image of post VSCode spring开发环境配置" /&gt;&lt;p&gt;Atom One Dark Theme&lt;/p&gt;
+&lt;p&gt;Atom One Light Theme&lt;/p&gt;
+&lt;p&gt;Java Extension Pack v0.17.0&lt;/p&gt;
+&lt;p&gt;安装此插件时会同时安装下列关联插件：
+- Language Support for Java(TM) by Red Hat
+- Java Extension Pack
+- Java Test Runner
+- Maven for Java&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://notebook.qiniu.adenghub.club/image-20210628094934418.png&#34; &gt;
+		&lt;img src=&#34;https://notebook.qiniu.adenghub.club/image-20210628094934418.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Spring Boot Extension Pack v0.0.8&lt;/p&gt;
+&lt;p&gt;安装此插件时会同时安装下列关联插件：&lt;/p&gt;
+&lt;p&gt;- Spring Boot Tools
+- Cloudfoundry Manifest YML Support
+- Concourse CI Pipeline Editor
+- Spring Initializr Java Support&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://notebook.qiniu.adenghub.club/image-20210628092526766.png&#34; &gt;
+		&lt;img src=&#34;https://notebook.qiniu.adenghub.club/image-20210628092526766.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;image-20210628092526766&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;image-20210628092526766&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;debug好像使用的默认 java版本&lt;/p&gt;
+&lt;p&gt;mac java版本切换&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/u010324331/article/details/105441518&#34;&gt;https://blog.csdn.net/u010324331/article/details/105441518&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Rust开发环境搭建</title>
         <link>http://blog.adenghub.club/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
@@ -128,6 +292,7 @@ info: The currently active `rustc` version is `rustc 1.51.0 (2fd73fabe 2021-03-2
 &lt;p&gt;您在安装 Rustup 时，也会安装 Rust 构建工具和包管理器的最新稳定版，即 Cargo。Cargo 可以做很多事情：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;cargo build&lt;/code&gt; 可以构建项目&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cargo check&lt;/code&gt; 可以检查是否可编译&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cargo run&lt;/code&gt; 可以运行项目&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cargo test&lt;/code&gt; 可以测试项目&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cargo doc&lt;/code&gt; 可以为项目构建文档&lt;/li&gt;
@@ -180,7 +345,20 @@ Terminal will be reused by tasks, press any key to close it.
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;codelldb-插件&#34;&gt;CodeLLDB 插件&lt;/h2&gt;
 &lt;p&gt;搜索插件CodeLLDB并安装。&lt;/p&gt;
 &lt;p&gt;调试配置文件里新建，选择LLDB类型，提示发现&lt;code&gt;Cargo.toml&lt;/code&gt;是否根据该文件创建配置文件，选是就ok了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://notebook.qiniu.adenghub.club/image-20210429142736896.png&#34; alt=&#34;image-20210429142736896&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://notebook.qiniu.adenghub.club/image-20210429142736896.png&#34; &gt;
+		&lt;img src=&#34;https://notebook.qiniu.adenghub.club/image-20210429142736896.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;image-20210429142736896&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;image-20210429142736896&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;这就是一名 Rustacean 了！开始愉快玩耍。&lt;/p&gt;
 &lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jianshu.com/p/cf45d95ada26&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -233,7 +411,20 @@ Terminal will be reused by tasks, press any key to close it.
 &lt;h2 id=&#34;github-pages-仓库新建&#34;&gt;Github Pages 仓库新建&lt;/h2&gt;
 &lt;p&gt;按照 &lt;a class=&#34;link&#34; href=&#34;https://pages.github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Github Pages官网&lt;/a&gt; 说明，新建一个和github用户名一样的Repo，格式为 &lt;code&gt;username.github.io&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://notebook.qiniu.adenghub.club/image-20210312135040716.png&#34; alt=&#34;image-20210312135040716&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://notebook.qiniu.adenghub.club/image-20210312135040716.png&#34; &gt;
+		&lt;img src=&#34;https://notebook.qiniu.adenghub.club/image-20210312135040716.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;image-20210312135040716&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;image-20210312135040716&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h2 id=&#34;hugo-安装&#34;&gt;Hugo 安装&lt;/h2&gt;
 &lt;p&gt;参考 &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/installing/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo官网&lt;/a&gt; 本地安装hugo，笔者Mac使用brew安装:&lt;/p&gt;
@@ -262,14 +453,40 @@ $ git push -u origin main
 cp -R themes/hugo-theme-stack/exampleSite .
 
 hugo server
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://notebook.qiniu.adenghub.club/image-20210420203228398.png&#34; alt=&#34;image-20210420203228398&#34;  /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://notebook.qiniu.adenghub.club/image-20210420203228398.png&#34; &gt;
+		&lt;img src=&#34;https://notebook.qiniu.adenghub.club/image-20210420203228398.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;image-20210420203228398&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;image-20210420203228398&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h2 id=&#34;github-pages配置&#34;&gt;Github Pages配置&lt;/h2&gt;
 &lt;p&gt;做如下图2处配置：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;选用根目录下docs文件夹内容为站点目录（这里要配合修改 config.yaml，添加配置项 &lt;code&gt;publishdir: docs&lt;/code&gt;）&lt;/li&gt;
 &lt;li&gt;配置自定义域名&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://notebook.qiniu.adenghub.club/image-20210312141034064.png&#34; alt=&#34;image-20210312141034064&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://notebook.qiniu.adenghub.club/image-20210312141034064.png&#34; &gt;
+		&lt;img src=&#34;https://notebook.qiniu.adenghub.club/image-20210312141034064.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;image-20210312141034064&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;image-20210312141034064&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h2 id=&#34;写作&#34;&gt;写作&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;hugo new post/xxxx-xxx/index.md
 
@@ -302,52 +519,80 @@ hugo
     &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;图片&#34;&gt;图片&lt;/h2&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 66; flex-basis: 160px&#34;&gt;
-		&lt;a href=&#34;http://blog.adenghub.club/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34; data-size=&#34;667x1000&#34;&gt;&lt;img src=&#34;http://blog.adenghub.club/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
-				srcset=&#34;http://blog.adenghub.club/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_480x0_resize_q75_box.jpg 480w, http://blog.adenghub.club/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_1024x0_resize_q75_box.jpg 1024w&#34;
-				width=&#34;667&#34;
-				height=&#34;1000&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Photo by Florian Klauer on Unsplash&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Photo by Florian Klauer on Unsplash&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;  &lt;figure style=&#34;flex-grow: 149; flex-basis: 359px&#34;&gt;
-		&lt;a href=&#34;http://blog.adenghub.club/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34; data-size=&#34;1000x667&#34;&gt;&lt;img src=&#34;http://blog.adenghub.club/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
-				srcset=&#34;http://blog.adenghub.club/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_480x0_resize_q75_box.jpg 480w, http://blog.adenghub.club/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_1024x0_resize_q75_box.jpg 1024w&#34;
-				width=&#34;1000&#34;
-				height=&#34;667&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Photo by Luca Bravo on Unsplash&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Photo by Luca Bravo on Unsplash&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 320px&#34;&gt;
-		&lt;a href=&#34;http://blog.adenghub.club/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34; data-size=&#34;1000x750&#34;&gt;&lt;img src=&#34;http://blog.adenghub.club/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
-				srcset=&#34;http://blog.adenghub.club/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_480x0_resize_q75_box.jpg 480w, http://blog.adenghub.club/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_1024x0_resize_q75_box.jpg 1024w&#34;
-				width=&#34;1000&#34;
-				height=&#34;750&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Photo by Helena Hertz on Unsplash&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Photo by Helena Hertz on Unsplash&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;  &lt;figure style=&#34;flex-grow: 66; flex-basis: 160px&#34;&gt;
-		&lt;a href=&#34;http://blog.adenghub.club/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34; data-size=&#34;667x1000&#34;&gt;&lt;img src=&#34;http://blog.adenghub.club/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
-				srcset=&#34;http://blog.adenghub.club/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_480x0_resize_q75_box.jpg 480w, http://blog.adenghub.club/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_1024x0_resize_q75_box.jpg 1024w&#34;
-				width=&#34;667&#34;
-				height=&#34;1000&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Photo by Hudai Gayiran on Unsplash&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Photo by Hudai Gayiran on Unsplash&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 66; 
+			flex-basis: 160px&#34;
+	&gt;
+	&lt;a href=&#34;http://blog.adenghub.club/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34; data-size=&#34;667x1000&#34;&gt;
+		&lt;img src=&#34;http://blog.adenghub.club/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
+			width=&#34;667&#34;
+			height=&#34;1000&#34;
+			srcset=&#34;http://blog.adenghub.club/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_480x0_resize_q75_box.jpg 480w, http://blog.adenghub.club/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_1024x0_resize_q75_box.jpg 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Photo by Florian Klauer on Unsplash&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Photo by Florian Klauer on Unsplash&lt;/figcaption&gt;
+	
+&lt;/figure&gt;  &lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 149; 
+			flex-basis: 359px&#34;
+	&gt;
+	&lt;a href=&#34;http://blog.adenghub.club/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34; data-size=&#34;1000x667&#34;&gt;
+		&lt;img src=&#34;http://blog.adenghub.club/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
+			width=&#34;1000&#34;
+			height=&#34;667&#34;
+			srcset=&#34;http://blog.adenghub.club/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_480x0_resize_q75_box.jpg 480w, http://blog.adenghub.club/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_1024x0_resize_q75_box.jpg 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Photo by Luca Bravo on Unsplash&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Photo by Luca Bravo on Unsplash&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 133; 
+			flex-basis: 320px&#34;
+	&gt;
+	&lt;a href=&#34;http://blog.adenghub.club/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34; data-size=&#34;1000x750&#34;&gt;
+		&lt;img src=&#34;http://blog.adenghub.club/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
+			width=&#34;1000&#34;
+			height=&#34;750&#34;
+			srcset=&#34;http://blog.adenghub.club/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_480x0_resize_q75_box.jpg 480w, http://blog.adenghub.club/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_1024x0_resize_q75_box.jpg 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Photo by Helena Hertz on Unsplash&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Photo by Helena Hertz on Unsplash&lt;/figcaption&gt;
+	
+&lt;/figure&gt;  &lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 66; 
+			flex-basis: 160px&#34;
+	&gt;
+	&lt;a href=&#34;http://blog.adenghub.club/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34; data-size=&#34;667x1000&#34;&gt;
+		&lt;img src=&#34;http://blog.adenghub.club/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
+			width=&#34;667&#34;
+			height=&#34;1000&#34;
+			srcset=&#34;http://blog.adenghub.club/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_480x0_resize_q75_box.jpg 480w, http://blog.adenghub.club/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_1024x0_resize_q75_box.jpg 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Photo by Hudai Gayiran on Unsplash&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Photo by Hudai Gayiran on Unsplash&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;Photo by Florian Klauer on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;florian-klauer-nptLmg6jqDo-unsplash.jpg&lt;/span&gt;)  ![&lt;span class=&#34;nt&#34;&gt;Photo by Luca Bravo on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;luca-bravo-alS7ewQ41M8-unsplash.jpg&lt;/span&gt;) 
 
 ![&lt;span class=&#34;nt&#34;&gt;Photo by Helena Hertz on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;helena-hertz-wWZzXlDpMog-unsplash.jpg&lt;/span&gt;)  ![&lt;span class=&#34;nt&#34;&gt;Photo by Hudai Gayiran on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&lt;/span&gt;)
@@ -497,7 +742,7 @@ hugo
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;The above quote is excerpted from Rob Pike&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=PAAkCSZUG1c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;talk&lt;/a&gt; during Gopherfest, November 18, 2015. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+    &gt;talk&lt;/a&gt; during Gopherfest, November 18, 2015.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;</description>
@@ -585,6 +830,102 @@ $$&lt;/p&gt;</description>
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;.emoji {
   font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Jenkins 初探</title>
+        <link>http://blog.adenghub.club/p/jenkins-%E5%88%9D%E6%8E%A2/</link>
+        <pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate>
+        
+        <guid>http://blog.adenghub.club/p/jenkins-%E5%88%9D%E6%8E%A2/</guid>
+        <description>&lt;img src="http://blog.adenghub.club/p/jenkins-%E5%88%9D%E6%8E%A2/WX20211009-091723@2x.png" alt="Featured image of post Jenkins 初探" /&gt;&lt;h1 id=&#34;缘由&#34;&gt;缘由&lt;/h1&gt;
+&lt;p&gt;本来尝试DockerFile加DaoCloud搞定持续集成的，发现还是很多地方绕不开，比如Docker镜像构建速度，Play项目构建时依赖解析速度，可视化等等，开始重新考虑Jenkins。&lt;/p&gt;
+&lt;p&gt;之前对&lt;a class=&#34;link&#34; href=&#34;https://jenkins.io/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Jenkins&lt;/a&gt;印象不好估计是受UI影响了，这次打开官网，Blue Ocean眼前一亮啊，兴致大起。&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://notebook.qiniu.adenghub.club/1240.png&#34; &gt;
+		&lt;img src=&#34;https://notebook.qiniu.adenghub.club/1240.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Blue Ocean1.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Blue Ocean1.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://notebook.qiniu.adenghub.club/1240-20211009091302813.png&#34; &gt;
+		&lt;img src=&#34;https://notebook.qiniu.adenghub.club/1240-20211009091302813.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Blue Ocean2.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Blue Ocean2.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;安装&#34;&gt;安装&lt;/h1&gt;
+&lt;p&gt;直接docker走起。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker pull jenkins
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这里Mac用户推荐用Docker官网的dmg安装，配合&lt;a class=&#34;link&#34; href=&#34;http://guide.daocloud.io/dcs/daocloud-9153151.html#docker-toolbox&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DaoCloud的加速器&lt;/a&gt;，镜像下载速度飞起。&lt;/p&gt;
+&lt;p&gt;#运行&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run -d -p 49001:8080 -v /Users/xxx/Documents/Docker/Volume/Jenkins:/var/jenkins_home -t jenkins
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;启动后访问 http://localhost:49001/ 会要求输入secrets token。&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://notebook.qiniu.adenghub.club/1240-20211009091337344.png&#34; &gt;
+		&lt;img src=&#34;https://notebook.qiniu.adenghub.club/1240-20211009091337344.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Secrets.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Secrets.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;可以在本地Volume里找到，也可以进入镜像查看。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker exec -it 4b7112ec2f2c /bin/sh
+
+cat /var/jenkins_home/secrets/initialAdminPassword
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输入后，开始初始化，安装默认Plugins。&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://notebook.qiniu.adenghub.club/1240-20211009091414913.png&#34; &gt;
+		&lt;img src=&#34;https://notebook.qiniu.adenghub.club/1240-20211009091414913.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Plugins.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Plugins.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;然后添加一个Admin账号，就进入控制台了。&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://notebook.qiniu.adenghub.club/1240-20211009091438020.png&#34; &gt;
+		&lt;img src=&#34;https://notebook.qiniu.adenghub.club/1240-20211009091438020.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Console.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Console.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+</description>
         </item>
         
     </channel>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>notes on adeng&#39;s blog</title>
+    <link>http://blog.adenghub.club/tags/notes/</link>
+    <description>Recent content in notes on adeng&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.adenghub.club/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust编程之道读书笔记</title>
+      <link>http://blog.adenghub.club/p/rust%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/p/rust%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <description>第一章 新时代的语言 不谋全局者，不足谋一域。为了达成目标， Rust语言遵循了三条设计哲学:
+*内存安全
+*零成本 抽象
+*实用性
+像 CIC++语言的类型系统 就不是类型安全的，因为它 们并没有对 无意义 的行为进行 约束。一个最简单 的例子就 是数组 越界，在 CIC++语言中并不对其做任何检查，导致发生了语 言规范规定之外的行为，也就是 未定义行为 (Undefined Behavior)。
+C++中的RAII机制 Resource Acquisition Is Initialization
+LLVM https://www.jianshu.com/p/1367dad95445
+在进一步学习之前，我们有必要了解一下 Rust代码是如何执行的。 Rust是跨平台语言， 一次编译，到处运行，这得益于 LLVM。 Rust编译器是一个 LLVM 编译前端，它将代码编译 为 LLVMIR， 然后经过 LLVM 编译为相应的平台目标 。
+Rust 源码经过分词和解析，生成 AST C抽象语法树)。 然后把 AST 进一步简化处理为 HIR CHigh-level IR)，目的是让编译器更方便地做类型检 查。 HIR 会进一步被编译为 MIR (MiddleIR)，这是一种中间表示，它在 Rustl.12版本中被引入， 主要用于以下目的。
+.缩短编译时间 。 MIR 可以帮助实现增量编译，当你修改完代码重新编译的时候 ， 编译 器只 计 算更改过的部分，从而缩短了编译时间 。</description>
+    </item>
+    
+  </channel>
+</rss>

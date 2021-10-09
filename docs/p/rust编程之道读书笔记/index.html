@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Rust编程之道读书笔记'><title>Rust编程之道读书笔记</title>
+
+<link rel='canonical' href='http://blog.adenghub.club/p/rust%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Rust编程之道读书笔记'>
+<meta property='og:description' content='Rust编程之道读书笔记'>
+<meta property='og:url' content='http://blog.adenghub.club/p/rust%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/'>
+<meta property='og:site_name' content='adeng&#39;s blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='rust' /><meta property='article:tag' content='notes' /><meta property='article:published_time' content='2021-05-31T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-05-31T00:00:00&#43;00:00'/><meta property='og:image' content='http://blog.adenghub.club/p/rust%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/WX20211009-092716@2x.png' />
+<meta name="twitter:title" content="Rust编程之道读书笔记">
+<meta name="twitter:description" content="Rust编程之道读书笔记"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://blog.adenghub.club/p/rust%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/WX20211009-092716@2x.png' />
+    </head>
+    <body class="
+    article-page 
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        on-phone--column extended
+    
+">
+    
+        <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        <h1 class="site-name"><a href="http://blog.adenghub.club/">adeng&#39;s blog</a></h1>
+        <h2 class="site-description">漫步月球表面.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+    
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/rust%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
+                <img src="/p/rust%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/WX20211009-092716@2x_hue034145adb14794c92e0ad87aaf2e103_1602411_800x0_resize_box_2.png"
+                        srcset="/p/rust%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/WX20211009-092716@2x_hue034145adb14794c92e0ad87aaf2e103_1602411_800x0_resize_box_2.png 800w, /p/rust%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/WX20211009-092716@2x_hue034145adb14794c92e0ad87aaf2e103_1602411_1600x0_resize_box_2.png 1600w"
+                        width="800" 
+                        height="427" 
+                        loading="lazy"
+                        alt="Featured image of post Rust编程之道读书笔记" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/rust/" >
+                Rust
+            </a>
+        
+            <a href="/categories/notes/" >
+                notes
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/rust%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">Rust编程之道读书笔记</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Rust编程之道读书笔记
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">May 31, 2021</time>
+            </div>
+        
+
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h1 id="第一章-brbr新时代的语言">第一章 <!-- raw HTML omitted --><!-- raw HTML omitted -->新时代的语言</h1>
+<p><!-- raw HTML omitted -->不谋全局者，不足谋一域。<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>为了达成目标， Rust语言遵循了三条设计哲学:</p>
+<p>*内存安全</p>
+<p>*零成本 抽象</p>
+<p>*实用性</p>
+<p>像 CIC++语言的类型系统 就不是类型安全的，因为它 们并没有对 无意义 的行为进行 约束。一个最简单 的例子就 是数组 越界，在 CIC++语言中并不对其做任何检查，导致发生了语 言规范规定之外的行为，也就是 未定义行为 (Undefined Behavior)。</p>
+<p>C++中的RAII机制 Resource Acquisition Is Initialization</p>
+<p>LLVM <a href="https://www.jianshu.com/p/1367dad95445">https://www.jianshu.com/p/1367dad95445</a></p>
+<p>在进一步学习之前，我们有必要了解一下 Rust代码是如何执行的。 Rust是跨平台语言， 一次编译，到处运行，这得益于 LLVM。 Rust编译器是一个 LLVM 编译前端，它将代码编译 为 LLVMIR， 然后经过 LLVM 编译为相应的平台目标 。</p>
+<p>Rust 源码经过分词和解析，生成 AST C抽象语法树)。 然后把 AST 进一步简化处理为 HIR CHigh-level IR)，目的是让编译器更方便地做类型检 查。 HIR 会进一步被编译为 MIR (MiddleIR)，这是一种中间表示，它在 Rustl.12版本中被引入， 主要用于以下目的。</p>
+<p>.缩短编译时间 。 MIR 可以帮助实现增量编译，当你修改完代码重新编译的时候 ， 编译 器只 计 算更改过的部分，从而缩短了编译时间 。</p>
+<p>·缩短执行时间 。 MIR 可以 在 LLVM 编 译之前实现更细粒度的优 化，因为 单纯依赖 LLVM 的优化粒度太粗，而且 Rust无法控制，引入 MIR就增加了更多的优化空间。</p>
+<p>.更精确的类型检查 。 MIR 将帮助实现更灵活的借用检查，从而可以提升 Rust 的使用 体验 。</p>
+<p>最终， MIR 会被翻译为 LLVM IR， 然后被 LLVM 的处理编译为能在各个平台上运行的 目标机器码 。</p>
+<h1 id="第二章-语言精要">第二章 语言精要</h1>
+<p>Rust 中 的语法可以分成两大类 :语句 (Statement) 和表达式 (Expression)。语句是指</p>
+<p>要执行的一些操作和产生副作用的表达式。表达式主要用于计算求值。
+i吾句又分为两种: 声明语句 ( Declaration statement )和 表达式语句 ( Expression</p>
+<p>· 声明语句，用于声明各种语言项 Cltem)，包括声明变量、静态变量、常量、 结构体、 函数等，以及通过 extern 和 use 关键字引入包和模块等。</p>
+<p>· 表达式语句，特指以分号结尾的表达式。此类表达式求值结果将会被舍弃 ， 并总是返 回单元类型() 。</p>
+<blockquote>
+<p>不是很清楚···</p>
+</blockquote>
+<p>函数体的花括号识别为块表达式( Block Expression)</p>
+<p>块中的最后一个表达式是宏语句，所以返回单元 值()。</p>
+<h2 id="23-变量与绑定">2.3 变量与绑定</h2>
+<p>通过 let关键字来创建变量，这是 Rust语言从函数式语言中借鉴的语法形式。 let创建的 变量 一 般称为 绑定 (Binding)，它表明了标识符( Identifier) 和|值( Value)之 间 建立 的 一 种 关联关系。</p>
+<p>Rust 中 的表达式一般可以分为 位置表达式 (Place Expression )和 值表达式 (Value Expression)。在其他语言中， 一般 叫作 左值 CLValue)和右值( RValue)。</p>
+<p>从语义角度来说，位置表达式代表了持久性数据，值表达式代表了临时数据 。位置表达 式一般有持久的状态，值表达式要么是字面量，要么是表达式求值过程中创建的临时值。</p>
+<p>表达式的求值过程在不同的上下文中会有不同的结果。求值上下文也分为 位置上下文 (Place Context)和值上下文 (Value Context)。下面几种表达式属于位置上下文:</p>
+<p>·赋值或者复合赋值语句左侧的操作数 。
+· 一元 引用表达式的独立操作数 。
+·包含隐式借用(引用)的操作数 。
+• match 判别式或 let 绑定右侧在使用 ref模式匹配的时 候也是位置上下文。</p>
+<p>除了上述几种情况，其余表达式都属于值上下文 。值表达式不能 出现在位置上下文中， 如代码清单 2-3 所示 。</p>
+<blockquote>
+<p>还没什么概念，待验证···</p>
+</blockquote>
+<h2 id="24-函数与闭包">2.4 函数与闭包</h2>
+<p>Rust 语言的作用域是静态作用 i茧，即词法作用域( Lexical Scope)。 由一对花括号来开 辟作用域， 其作用域在词法分析阶段就巳经确定了 ， 不会动态改变。</p>
+<p>在 Rust中，函数为一等公民。这意味着，函数自身就可以作为函数的参数和返回值使用。</p>
+<p>注意这里直接使用函数的名字来作为函数指针 。</p>
+<p>Rust编译器也可以像 C++或D语言那样，拥有编译时函数执行(Compile-TimeFunction Execution, CTFE)的能力 。</p>
+<p>除了 const fn， 官方还在实现 const generics 特性 。</p>
+<p>闭包也叫匿名函数 。 闭包有以下几个特点 :</p>
+<p>.可以像函数 一样被调用 。
+·可以捕 获上下文环境中的自由变 量。 .可以自 动推断输入和返回的类型 。</p>
+<p>闭包也可以作为函数参数和返回值， 但使用起来略有区别。</p>
+<p>Rust中闭包实际上就是由一个匿名结构体和 trait来组合实现的。</p>
+<p>闭包同样也可以作为返回值</p>
+<p>在代码清单 2-15 中使用了 imp! Fn(i32) -&gt; i32 作为函数的返回值，它表示实现 Fn(i32) -&gt; 的类型。</p>
+<h2 id="25-流程控制">2.5 流程控制</h2>
+<p>在 Rust 语言中， match 分支左边就是模式，右边就是执行代码 。 模式匹配同时也是一个 表达式，和 if表达式类似，所有分支必须返回同一个类型。</p>
+<h2 id="26-基本数据类型">2.6 基本数据类型</h2>
+<h2 id="210-泛型和trait">2.10 泛型和trait</h2>
+<p>代码第 25行和第 26行通过 fly_static::<!-- raw HTML omitted -->(duck)调用了 Duck实现的的 方法， 并返回 tmeo</p>
+<p>上面这种调用方式在 Rust 中 叫静态分发 。 Rust 编译器会为 何一static::<!-- raw HTML omitted -->(pig)和 fly_static: :<!-- raw HTML omitted -->(duck)这两个具体类型的调用生成特殊化的代码。 也就是说，对于 编译器来 说，这种 抽 象并不存在，因为在编译阶段，泛型己经被展开为具体类 型的代码 。</p>
+<p>代码第 27 行和第 28 行分别调用了 fly_dyn(&amp;Pig)和 fly dyn(&amp;Duck)，也可以 实现同样的 效果。但是 fly dyn 函数是动态分发方式的， 它会在运行时查找相应类型的方法， 会带来一 定的运行 时开销， 不过这种开销很小。</p>
+<h1 id="thought">Thought</h1>
+<p>全书内容都是MD格式可以覆盖的！</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/rust/">rust</a>
+        
+            <a href="/tags/notes/">notes</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/p/rust-web-%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E6%A0%88/">
+        
+        
+            <div class="article-image">
+                <img src="/p/rust-web-%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E6%A0%88/_hu1e557a83aea5695b0322fb3d0e67e778_1607129_4388a2baa003b26afbb8118470715355.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-wTZ0nfi/qqwim6m3sSnshQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Rust Web 开发技术栈</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+        
+        
+            <div class="article-image">
+                <img src="/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/QQ20210429-094005@2x.42a8ad77738766a2c90334025267e376_huc2435dcf376036f7134453affab0d62c_497879_250x150_fill_box_smart1_2.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-Qqitd3OHZqLJAzQCUmfjdg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Rust开发环境搭建</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 adeng&#39;s blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

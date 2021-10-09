@@ -12,7 +12,7 @@ categories = [
     "Rust", "Web"
 ]
 
-image = "WX20210420-201336@2x.png"
+image = "v2-83685de08789a0f9ffe9cfb9e38ba354_r.jpg"
 
 
 
