@@ -81,6 +81,27 @@ $ curl --proto &#39;=https&#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh info: d
     </item>
     
     <item>
+      <title>Jenkins Job迁移</title>
+      <link>http://blog.adenghub.club/p/jenkins-job%E8%BF%81%E7%A7%BB/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/p/jenkins-job%E8%BF%81%E7%A7%BB/</guid>
+      <description>手工方式 参考 Jenkins迁移job 主要是Jobs文件夹的拷贝，需要注意版本差异不要太大
+插件方式 安装插件 搜索 Job Import 插件进行安装
+配置远程服务 在系统配置 =&amp;gt; Job Import Plugin 配置 remote jenkins
+ image-20211009115415407 
+导入 点击 Job Import Plugin后选择之前配置的远程jenkins，点击query
+ image-20211009115811750 
+选择需要导入的Job导入即可，还可勾选是否安装依赖的插件
+ image-20211009120201514 
+Jenkins CLI方式 Jenkins CLI  方式可以将job导出为xml格式，然后在目的jenkins导入即可。
+Configure =&amp;gt; Show API Token 配置一个token，用于导出认证使用。
+ image-20211009140114317 
+相关命令如下：
+//导出 java -jar jenkins-cli.jar -s http://127.0.0.1:8080/jenkins -auth admin:11xxxxxxxxxxxxxx get-job &amp;quot;test-job&amp;quot; &amp;gt; test-job.xml //导入 需要新配置API Token java -jar jenkins-cli.jar -s http://127.0.0.1:8080/jenkins -auth admin:22xxxxxxxxxxxxxx create-job test-job &amp;lt; test-job.</description>
+    </item>
+    
+    <item>
       <title>Mermaid简介</title>
       <link>http://blog.adenghub.club/p/mermaid%E7%AE%80%E4%BB%8B/</link>
       <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>

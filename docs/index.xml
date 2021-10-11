@@ -366,6 +366,94 @@ Terminal will be reused by tasks, press any key to close it.
 </description>
         </item>
         <item>
+        <title>Jenkins Job迁移</title>
+        <link>http://blog.adenghub.club/p/jenkins-job%E8%BF%81%E7%A7%BB/</link>
+        <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+        
+        <guid>http://blog.adenghub.club/p/jenkins-job%E8%BF%81%E7%A7%BB/</guid>
+        <description>&lt;img src="http://blog.adenghub.club/p/jenkins-job%E8%BF%81%E7%A7%BB/WX20211009-091723@2x.png" alt="Featured image of post Jenkins Job迁移" /&gt;&lt;h1 id=&#34;手工方式&#34;&gt;手工方式&lt;/h1&gt;
+&lt;p&gt;参考 &lt;a class=&#34;link&#34; href=&#34;https://www.jianshu.com/p/76465d12171c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Jenkins迁移job&lt;/a&gt; 主要是Jobs文件夹的拷贝，需要注意版本差异不要太大&lt;/p&gt;
+&lt;h1 id=&#34;插件方式&#34;&gt;插件方式&lt;/h1&gt;
+&lt;h3 id=&#34;安装插件&#34;&gt;安装插件&lt;/h3&gt;
+&lt;p&gt;搜索 &lt;a class=&#34;link&#34; href=&#34;https://plugins.jenkins.io/job-import-plugin/#documentation&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Job Import&lt;/a&gt; 插件进行安装&lt;/p&gt;
+&lt;h3 id=&#34;配置远程服务&#34;&gt;配置远程服务&lt;/h3&gt;
+&lt;p&gt;在系统配置 =&amp;gt; Job Import Plugin 配置 remote jenkins&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://notebook.qiniu.adenghub.club/image-20211009115415407.png&#34; &gt;
+		&lt;img src=&#34;https://notebook.qiniu.adenghub.club/image-20211009115415407.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;image-20211009115415407&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;image-20211009115415407&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;导入&#34;&gt;导入&lt;/h3&gt;
+&lt;p&gt;点击 Job Import Plugin后选择之前配置的远程jenkins，点击query&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://notebook.qiniu.adenghub.club/image-20211009115811750.png&#34; &gt;
+		&lt;img src=&#34;https://notebook.qiniu.adenghub.club/image-20211009115811750.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;image-20211009115811750&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;image-20211009115811750&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;选择需要导入的Job导入即可，还可勾选是否安装依赖的插件&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://notebook.qiniu.adenghub.club/image-20211009120201514.png&#34; &gt;
+		&lt;img src=&#34;https://notebook.qiniu.adenghub.club/image-20211009120201514.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;image-20211009120201514&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;image-20211009120201514&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;jenkins-cli方式&#34;&gt;Jenkins CLI方式&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;Jenkins CLI &lt;/code&gt; 方式可以将job导出为xml格式，然后在目的jenkins导入即可。&lt;/p&gt;
+&lt;p&gt;Configure =&amp;gt; Show API Token 配置一个token，用于导出认证使用。&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://notebook.qiniu.adenghub.club/image-20211009140114317.png&#34; &gt;
+		&lt;img src=&#34;https://notebook.qiniu.adenghub.club/image-20211009140114317.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;image-20211009140114317&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;image-20211009140114317&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;相关命令如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;//导出
+java -jar jenkins-cli.jar -s http://127.0.0.1:8080/jenkins -auth admin:11xxxxxxxxxxxxxx get-job &amp;quot;test-job&amp;quot; &amp;gt; test-job.xml
+
+//导入 需要新配置API Token
+java -jar jenkins-cli.jar -s http://127.0.0.1:8080/jenkins -auth admin:22xxxxxxxxxxxxxx create-job test-job &amp;lt;  test-job.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;遇到问题&#34;&gt;遇到问题&lt;/h1&gt;
+&lt;h2 id=&#34;unable-to-read-usrxxxxxxconfigxml&#34;&gt;Unable to read /usr/xxx/xxx/config.xml&lt;/h2&gt;
+&lt;p&gt;导入时某2个job报错，最后发现是由于目的jenkins未装maven插件导致（导入时已经勾选了安装依赖插件），手动安装后再导入就ok了。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Mermaid简介</title>
         <link>http://blog.adenghub.club/p/mermaid%E7%AE%80%E4%BB%8B/</link>
         <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>

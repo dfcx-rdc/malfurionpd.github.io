@@ -82,3 +82,9 @@ java -jar jenkins-cli.jar -s http://127.0.0.1:8080/jenkins -auth admin:22xxxxxxx
 
 
 
+# 遇到问题
+
+## Unable to read /usr/xxx/xxx/config.xml
+
+导入时某2个job报错，最后发现是由于目的jenkins未装maven插件导致（导入时已经勾选了安装依赖插件），手动安装后再导入就ok了。
+

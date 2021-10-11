@@ -56,10 +56,25 @@
     <loc>http://blog.adenghub.club/p/rust%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://blog.adenghub.club/categories/devops/</loc>
+    <lastmod>2021-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://blog.adenghub.club/tags/devops/</loc>
+    <lastmod>2021-04-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://blog.adenghub.club/categories/hugo/</loc>
     <lastmod>2021-04-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://blog.adenghub.club/tags/hugo/</loc>
+    <lastmod>2021-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://blog.adenghub.club/categories/jenkins/</loc>
+    <lastmod>2021-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://blog.adenghub.club/tags/jenkins/</loc>
+    <lastmod>2021-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://blog.adenghub.club/p/jenkins-job%E8%BF%81%E7%A7%BB/</loc>
     <lastmod>2021-04-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://blog.adenghub.club/tags/mermaid/</loc>
@@ -70,12 +85,6 @@
   </url><url>
     <loc>http://blog.adenghub.club/categories/write/</loc>
     <lastmod>2021-04-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://blog.adenghub.club/categories/devops/</loc>
-    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://blog.adenghub.club/tags/devops/</loc>
-    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://blog.adenghub.club/tags/github/</loc>
     <lastmod>2021-03-12T00:00:00+00:00</lastmod>
@@ -145,12 +154,6 @@
   </url><url>
     <loc>http://blog.adenghub.club/about/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://blog.adenghub.club/categories/jenkins/</loc>
-    <lastmod>2017-01-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://blog.adenghub.club/tags/jenkins/</loc>
-    <lastmod>2017-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://blog.adenghub.club/p/jenkins-%E5%88%9D%E6%8E%A2/</loc>
     <lastmod>2017-01-04T00:00:00+00:00</lastmod>

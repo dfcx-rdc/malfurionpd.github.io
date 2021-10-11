@@ -53,6 +53,15 @@
     </item>
     
     <item>
+      <title>DevOps</title>
+      <link>http://blog.adenghub.club/categories/devops/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/categories/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hugo</title>
       <link>http://blog.adenghub.club/categories/hugo/</link>
       <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
@@ -62,20 +71,20 @@
     </item>
     
     <item>
+      <title>Jenkins</title>
+      <link>http://blog.adenghub.club/categories/jenkins/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.adenghub.club/categories/jenkins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Write</title>
       <link>http://blog.adenghub.club/categories/write/</link>
       <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://blog.adenghub.club/categories/write/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DevOps</title>
-      <link>http://blog.adenghub.club/categories/devops/</link>
-      <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.adenghub.club/categories/devops/</guid>
       <description></description>
     </item>
     
@@ -121,15 +130,6 @@
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>http://blog.adenghub.club/categories/test-with-whitespaces/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jenkins</title>
-      <link>http://blog.adenghub.club/categories/jenkins/</link>
-      <pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.adenghub.club/categories/jenkins/</guid>
       <description></description>
     </item>
     
