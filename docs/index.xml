@@ -451,6 +451,12 @@ java -jar jenkins-cli.jar -s http://127.0.0.1:8080/jenkins -auth admin:22xxxxxxx
 &lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;遇到问题&#34;&gt;遇到问题&lt;/h1&gt;
 &lt;h2 id=&#34;unable-to-read-usrxxxxxxconfigxml&#34;&gt;Unable to read /usr/xxx/xxx/config.xml&lt;/h2&gt;
 &lt;p&gt;导入时某2个job报错，最后发现是由于目的jenkins未装maven插件导致（导入时已经勾选了安装依赖插件），手动安装后再导入就ok了。&lt;/p&gt;
+&lt;h2 id=&#34;item_rootdirbuilds-does-not-exist-and-probably-cannot-be-created&#34;&gt;${ITEM_ROOTDIR}/builds does not exist and probably cannot be created&lt;/h2&gt;
+&lt;p&gt;在执行 &lt;code&gt;tar -zxvf jobs.tar.gz&lt;/code&gt; 后jobs目录权限不是jenkins导致的&lt;/p&gt;
+&lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/50798720/jenkins-throwing-error-jenkins-model-invalidbuildsdir-item-rootdir-builds-d&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Jenkins throwing error: jenkins.model.InvalidBuildsDir: ${ITEM_ROOTDIR}/builds does not exist and probably cannot be created&lt;/a&gt;，执行 &lt;code&gt;sudo chown -R jenkins:jenkins jobs&lt;/code&gt; 解决。&lt;/p&gt;
+&lt;h2 id=&#34;插件点击import后卡死报502错误&#34;&gt;插件点击import后卡死，报502错误&lt;/h2&gt;
+&lt;p&gt;查看日志是 &lt;code&gt;2021-10-11 02:48:43.828+0000 [id=17]	INFO	o.j.c.p.j.JobImportAction#doImportInternal: Connect to jenkins.xxx.com:80 [jenkins.xxx.com] failed: Connection timed out (Connection timed out)&lt;/code&gt; ，原因是jenkins自己配置的访问地址必须走VPN才能访问，而remote jenkins配置的地址可以访问并且不一致。&lt;/p&gt;
 </description>
         </item>
         <item>
