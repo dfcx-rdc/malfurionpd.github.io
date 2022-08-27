@@ -38,7 +38,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: 漫步月球表面.
+        subtitle: 月球漫步
         avatar:
             local: true
             src: img/avatar.png

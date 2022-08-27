@@ -236,6 +236,18 @@ Terminal will be reused by tasks, press any key to close it.
 
 
 
+[Rust 内存错误调试和动态分析工具分享](https://rustmagazine.github.io/rust_magazine_2021/chapter_7/dynamic_analyzing_tools.html#rust-内存错误调试和动态分析工具分享)
+
+
+
+## Even Better TOML 插件
+
+用来格式化 TOML 文件，它还内置了 `Cargo.toml` 的 schema, 在编辑 `Cargo.tmol` 时提供更加智能的提示。
+
+https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml
+
+
+
 这就是一名 Rustacean 了！开始愉快玩耍。
 
 
