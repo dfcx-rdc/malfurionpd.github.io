@@ -359,6 +359,11 @@ Terminal will be reused by tasks, press any key to close it.
 	&lt;figcaption&gt;image-20210429142736896&lt;/figcaption&gt;
 	
 &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://rustmagazine.github.io/rust_magazine_2021/chapter_7/dynamic_analyzing_tools.html#rust-%e5%86%85%e5%ad%98%e9%94%99%e8%af%af%e8%b0%83%e8%af%95%e5%92%8c%e5%8a%a8%e6%80%81%e5%88%86%e6%9e%90%e5%b7%a5%e5%85%b7%e5%88%86%e4%ba%ab&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Rust 内存错误调试和动态分析工具分享&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;even-better-toml-插件&#34;&gt;Even Better TOML 插件&lt;/h2&gt;
+&lt;p&gt;用来格式化 TOML 文件，它还内置了 &lt;code&gt;Cargo.toml&lt;/code&gt; 的 schema, 在编辑 &lt;code&gt;Cargo.tmol&lt;/code&gt; 时提供更加智能的提示。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml&#34;&gt;https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;这就是一名 Rustacean 了！开始愉快玩耍。&lt;/p&gt;
 &lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jianshu.com/p/cf45d95ada26&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
